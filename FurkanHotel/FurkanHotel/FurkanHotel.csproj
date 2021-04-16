@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F314BDD8-E329-4CB6-AD55-D29AB5CB5AC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FurkanHotel</RootNamespace>
+    <AssemblyName>FurkanHotel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaMenu.Designer.cs">
+      <DependentUpon>anaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim.Designer.cs">
+      <DependentUpon>bildirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetMUSTERİ.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetMUSTERİ.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetMUSTERİSATİS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetMUSTERİSATİS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetODA2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetODA2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetODASATİS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetODASATİS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetsatisoda2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetsatisoda2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetSATİS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetSATİS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetSIL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetSIL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbFurkanOtelDataSetUYE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbFurkanOtelDataSetUYE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Events\Musteri.cs" />
+    <Compile Include="Events\Oda.cs" />
+    <Compile Include="Events\Satis.cs" />
+    <Compile Include="Events\Uye.cs" />
+    <Compile Include="girisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisEkrani.Designer.cs">
+      <DependentUpon>girisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriİslemleri.Designer.cs">
+      <DependentUpon>musteriİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odalar.Designer.cs">
+      <DependentUpon>odalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odaİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odaİslemleri.Designer.cs">
+      <DependentUpon>odaİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil.Designer.cs">
+      <DependentUpon>profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satisİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisİslemleri.Designer.cs">
+      <DependentUpon>satisİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiUnuttum.Designer.cs">
+      <DependentUpon>sifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeİslemleri.Designer.cs">
+      <DependentUpon>uyeİslemleri.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anaMenu.resx">
+      <DependentUpon>anaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim.resx">
+      <DependentUpon>bildirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisEkrani.resx">
+      <DependentUpon>girisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriİslemleri.resx">
+      <DependentUpon>musteriİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odalar.resx">
+      <DependentUpon>odalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odaİslemleri.resx">
+      <DependentUpon>odaİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil.resx">
+      <DependentUpon>profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="satisİslemleri.resx">
+      <DependentUpon>satisİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremiUnuttum.resx">
+      <DependentUpon>sifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeİslemleri.resx">
+      <DependentUpon>uyeİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbFurkanOtelDataSetMUSTERİ.xsc">
+      <DependentUpon>dbFurkanOtelDataSetMUSTERİ.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetMUSTERİ.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetMUSTERİ.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetMUSTERİ.xss">
+      <DependentUpon>dbFurkanOtelDataSetMUSTERİ.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetMUSTERİSATİS.xsc">
+      <DependentUpon>dbFurkanOtelDataSetMUSTERİSATİS.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetMUSTERİSATİS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetMUSTERİSATİS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetMUSTERİSATİS.xss">
+      <DependentUpon>dbFurkanOtelDataSetMUSTERİSATİS.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetODA2.xsc">
+      <DependentUpon>dbFurkanOtelDataSetODA2.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetODA2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetODA2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetODA2.xss">
+      <DependentUpon>dbFurkanOtelDataSetODA2.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetODASATİS.xsc">
+      <DependentUpon>dbFurkanOtelDataSetODASATİS.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetODASATİS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetODASATİS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetODASATİS.xss">
+      <DependentUpon>dbFurkanOtelDataSetODASATİS.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetsatisoda2.xsc">
+      <DependentUpon>dbFurkanOtelDataSetsatisoda2.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetsatisoda2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetsatisoda2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetsatisoda2.xss">
+      <DependentUpon>dbFurkanOtelDataSetsatisoda2.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetSATİS.xsc">
+      <DependentUpon>dbFurkanOtelDataSetSATİS.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetSATİS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetSATİS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetSATİS.xss">
+      <DependentUpon>dbFurkanOtelDataSetSATİS.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetSIL.xsc">
+      <DependentUpon>dbFurkanOtelDataSetSIL.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetSIL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetSIL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetSIL.xss">
+      <DependentUpon>dbFurkanOtelDataSetSIL.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetUYE.xsc">
+      <DependentUpon>dbFurkanOtelDataSetUYE.xsd</DependentUpon>
+    </None>
+    <None Include="dbFurkanOtelDataSetUYE.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbFurkanOtelDataSetUYE.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbFurkanOtelDataSetUYE.xss">
+      <DependentUpon>dbFurkanOtelDataSetUYE.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
