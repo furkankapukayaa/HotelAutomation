@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace FurkanHotel.Events
 {
@@ -97,6 +98,34 @@ namespace FurkanHotel.Events
             baglanti.Close();
 
             return tablo;
+        }
+
+        public dynamic OdaKontrol(string odadurumsorgu)
+        {
+            SqlCommand komut;
+            SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
+            SqlDataReader oku;
+
+            komut = new SqlCommand("SELECT * FROM tblOda Where odaid='" + odadurumsorgu + "'", baglanti);
+            baglanti.Open();
+            oku = komut.ExecuteReader();
+            if (oku.Read())
+            {
+                MessageBox.Show("onay");
+
+                List<string> aa = new List<string>();
+
+                for (int i = 0; i < oku.FieldCount; i++)
+                {
+                    aa.Add(oku[i].ToString());
+                }
+                return aa;
+            }
+            else
+            {
+                MessageBox.Show("hata");
+                return null;
+            }
         }
     }
 }
