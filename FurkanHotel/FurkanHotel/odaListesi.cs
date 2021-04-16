@@ -86,6 +86,17 @@ namespace FurkanHotel
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
+
+            komut = new SqlCommand("Update tblMusteri Set musteriodano=@odano Where musteriodano=@ad", baglanti);
+            komut.Parameters.AddWithValue("@ad", dataGridView1.SelectedCells[1].Value.ToString());
+            komut.Parameters.AddWithValue("@odano", "Satış Bekleniyor");
+            if ((baglanti.State == ConnectionState.Closed))
+            {
+                baglanti.Open();
+
+            }
+            komut.ExecuteNonQuery();
+            baglanti.Close();
             odalar_Load(sender, e);
         }
 

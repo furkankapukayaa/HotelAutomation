@@ -170,7 +170,7 @@ namespace FurkanHotel
                         //Office 365 = 'smtp.office365.com'
 
                         sc.EnableSsl = true;
-                        sc.Credentials = new System.Net.NetworkCredential("example@gmail.com", "pass");
+                        sc.Credentials = new System.Net.NetworkCredential("example@gmail.com", "password");
 
                         MailMessage mesaj = new MailMessage("example@gmail.com", eMail);
 

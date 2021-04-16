@@ -38,6 +38,7 @@ namespace FurkanHotel
             Aciklama.SetToolTip(musteriİslemleri, "Müşteri İşlemleri");
             Aciklama.SetToolTip(satisİslemleri, "Satış İşlemleri");
             Aciklama.SetToolTip(profil, "Profil");
+            Aciklama.SetToolTip(odalar, "Odalar");
         }
 
         private void timerTarih_Tick(object sender, EventArgs e)

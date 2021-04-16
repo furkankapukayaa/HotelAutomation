@@ -61,7 +61,7 @@ namespace FurkanHotel
             // 
             this.lblTarih.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTarih.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTarih.Location = new System.Drawing.Point(530, 9);
+            this.lblTarih.Location = new System.Drawing.Point(745, 9);
             this.lblTarih.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTarih.Name = "lblTarih";
             this.lblTarih.Size = new System.Drawing.Size(257, 97);
@@ -77,7 +77,7 @@ namespace FurkanHotel
             this.lblKullaniciAdi.BackColor = System.Drawing.Color.Transparent;
             this.lblKullaniciAdi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblKullaniciAdi.Font = new System.Drawing.Font("Poppins", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(99, 397);
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(99, 567);
             this.lblKullaniciAdi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
             this.lblKullaniciAdi.Size = new System.Drawing.Size(0, 37);
@@ -96,7 +96,7 @@ namespace FurkanHotel
             this.cikisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cikisYap.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cikisYap.ForeColor = System.Drawing.Color.Transparent;
-            this.cikisYap.Location = new System.Drawing.Point(715, 380);
+            this.cikisYap.Location = new System.Drawing.Point(930, 550);
             this.cikisYap.Margin = new System.Windows.Forms.Padding(4);
             this.cikisYap.Name = "cikisYap";
             this.cikisYap.Size = new System.Drawing.Size(72, 57);
@@ -123,7 +123,7 @@ namespace FurkanHotel
             this.uyeİslemleri.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.uyeİslemleri.ImageIndex = 0;
             this.uyeİslemleri.ImageList = this.icons;
-            this.uyeİslemleri.Location = new System.Drawing.Point(228, 91);
+            this.uyeİslemleri.Location = new System.Drawing.Point(241, 109);
             this.uyeİslemleri.Margin = new System.Windows.Forms.Padding(4);
             this.uyeİslemleri.Name = "uyeİslemleri";
             this.uyeİslemleri.Size = new System.Drawing.Size(147, 134);
@@ -155,7 +155,7 @@ namespace FurkanHotel
             this.musteriİslemleri.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.musteriİslemleri.ImageIndex = 2;
             this.musteriİslemleri.ImageList = this.icons;
-            this.musteriİslemleri.Location = new System.Drawing.Point(228, 233);
+            this.musteriİslemleri.Location = new System.Drawing.Point(638, 110);
             this.musteriİslemleri.Margin = new System.Windows.Forms.Padding(4);
             this.musteriİslemleri.Name = "musteriİslemleri";
             this.musteriİslemleri.Size = new System.Drawing.Size(147, 133);
@@ -177,7 +177,7 @@ namespace FurkanHotel
             this.odaİslemleri.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.odaİslemleri.ImageIndex = 1;
             this.odaİslemleri.ImageList = this.icons;
-            this.odaİslemleri.Location = new System.Drawing.Point(383, 91);
+            this.odaİslemleri.Location = new System.Drawing.Point(593, 265);
             this.odaİslemleri.Margin = new System.Windows.Forms.Padding(4);
             this.odaİslemleri.Name = "odaİslemleri";
             this.odaİslemleri.Size = new System.Drawing.Size(119, 136);
@@ -199,7 +199,7 @@ namespace FurkanHotel
             this.satisİslemleri.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.satisİslemleri.ImageIndex = 3;
             this.satisİslemleri.ImageList = this.icons;
-            this.satisİslemleri.Location = new System.Drawing.Point(383, 235);
+            this.satisİslemleri.Location = new System.Drawing.Point(469, 425);
             this.satisİslemleri.Margin = new System.Windows.Forms.Padding(4);
             this.satisİslemleri.Name = "satisİslemleri";
             this.satisİslemleri.Size = new System.Drawing.Size(130, 135);
@@ -221,7 +221,7 @@ namespace FurkanHotel
             this.profil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.profil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.profil.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.profil.Location = new System.Drawing.Point(13, 360);
+            this.profil.Location = new System.Drawing.Point(13, 530);
             this.profil.Margin = new System.Windows.Forms.Padding(4);
             this.profil.Name = "profil";
             this.profil.Size = new System.Drawing.Size(105, 77);
@@ -241,7 +241,7 @@ namespace FurkanHotel
             this.odalar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.odalar.ImageIndex = 4;
             this.odalar.ImageList = this.icons;
-            this.odalar.Location = new System.Drawing.Point(521, 163);
+            this.odalar.Location = new System.Drawing.Point(337, 265);
             this.odalar.Margin = new System.Windows.Forms.Padding(4);
             this.odalar.Name = "odalar";
             this.odalar.Size = new System.Drawing.Size(120, 134);
@@ -255,7 +255,7 @@ namespace FurkanHotel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1015, 620);
             this.Controls.Add(this.odalar);
             this.Controls.Add(this.satisİslemleri);
             this.Controls.Add(this.odaİslemleri);

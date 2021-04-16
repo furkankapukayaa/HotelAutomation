@@ -34,6 +34,12 @@ namespace FurkanHotel
             this.geriDon = new System.Windows.Forms.Button();
             this.icons = new System.Windows.Forms.ImageList(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.odaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odaadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odaturDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odakisisayisiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odaaciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odadurumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblOdaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.oDALAR = new FurkanHotel.ODALAR();
             this.odaBosalt = new System.Windows.Forms.Button();
@@ -41,12 +47,6 @@ namespace FurkanHotel
             this.odaHazır = new System.Windows.Forms.Button();
             this.mUSTERİLER = new FurkanHotel.MUSTERİLER();
             this.tblOdaTableAdapter = new FurkanHotel.ODALARTableAdapters.tblOdaTableAdapter();
-            this.odaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaturDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odakisisayisiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaaciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odadurumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oDALAR)).BeginInit();
@@ -77,7 +77,9 @@ namespace FurkanHotel
             // 
             this.icons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("icons.ImageStream")));
             this.icons.TransparentColor = System.Drawing.Color.Transparent;
-            this.icons.Images.SetKeyName(0, "key.png");
+            this.icons.Images.SetKeyName(0, "approval.png");
+            this.icons.Images.SetKeyName(1, "cleaning-products.png");
+            this.icons.Images.SetKeyName(2, "evacuation.png");
             // 
             // dataGridView1
             // 
@@ -107,58 +109,6 @@ namespace FurkanHotel
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(1185, 564);
             this.dataGridView1.TabIndex = 130;
-            // 
-            // tblOdaBindingSource
-            // 
-            this.tblOdaBindingSource.DataMember = "tblOda";
-            this.tblOdaBindingSource.DataSource = this.oDALAR;
-            // 
-            // oDALAR
-            // 
-            this.oDALAR.DataSetName = "ODALAR";
-            this.oDALAR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // odaBosalt
-            // 
-            this.odaBosalt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.odaBosalt.Location = new System.Drawing.Point(335, 624);
-            this.odaBosalt.Name = "odaBosalt";
-            this.odaBosalt.Size = new System.Drawing.Size(140, 71);
-            this.odaBosalt.TabIndex = 131;
-            this.odaBosalt.Text = "Oda Boşalt";
-            this.odaBosalt.UseVisualStyleBackColor = true;
-            this.odaBosalt.Click += new System.EventHandler(this.odaBosalt_Click);
-            // 
-            // odaTemizle
-            // 
-            this.odaTemizle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.odaTemizle.Location = new System.Drawing.Point(481, 624);
-            this.odaTemizle.Name = "odaTemizle";
-            this.odaTemizle.Size = new System.Drawing.Size(140, 71);
-            this.odaTemizle.TabIndex = 132;
-            this.odaTemizle.Text = "Oda Temizle";
-            this.odaTemizle.UseVisualStyleBackColor = true;
-            this.odaTemizle.Click += new System.EventHandler(this.odaTemizle_Click);
-            // 
-            // odaHazır
-            // 
-            this.odaHazır.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.odaHazır.Location = new System.Drawing.Point(627, 624);
-            this.odaHazır.Name = "odaHazır";
-            this.odaHazır.Size = new System.Drawing.Size(140, 71);
-            this.odaHazır.TabIndex = 133;
-            this.odaHazır.Text = "Oda  Hazır";
-            this.odaHazır.UseVisualStyleBackColor = true;
-            this.odaHazır.Click += new System.EventHandler(this.odaHazır_Click);
-            // 
-            // mUSTERİLER
-            // 
-            this.mUSTERİLER.DataSetName = "MUSTERİLER";
-            this.mUSTERİLER.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblOdaTableAdapter
-            // 
-            this.tblOdaTableAdapter.ClearBeforeFill = true;
             // 
             // odaidDataGridViewTextBoxColumn
             // 
@@ -205,6 +155,88 @@ namespace FurkanHotel
             this.odadurumDataGridViewTextBoxColumn.HeaderText = "Oda Durumu";
             this.odadurumDataGridViewTextBoxColumn.Name = "odadurumDataGridViewTextBoxColumn";
             this.odadurumDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tblOdaBindingSource
+            // 
+            this.tblOdaBindingSource.DataMember = "tblOda";
+            this.tblOdaBindingSource.DataSource = this.oDALAR;
+            // 
+            // oDALAR
+            // 
+            this.oDALAR.DataSetName = "ODALAR";
+            this.oDALAR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // odaBosalt
+            // 
+            this.odaBosalt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.odaBosalt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.odaBosalt.FlatAppearance.BorderSize = 0;
+            this.odaBosalt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.odaBosalt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.odaBosalt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.odaBosalt.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.odaBosalt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.odaBosalt.ImageKey = "evacuation.png";
+            this.odaBosalt.ImageList = this.icons;
+            this.odaBosalt.Location = new System.Drawing.Point(291, 602);
+            this.odaBosalt.Name = "odaBosalt";
+            this.odaBosalt.Size = new System.Drawing.Size(117, 115);
+            this.odaBosalt.TabIndex = 131;
+            this.odaBosalt.Text = "Oda Boşalt";
+            this.odaBosalt.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.odaBosalt.UseVisualStyleBackColor = true;
+            this.odaBosalt.Click += new System.EventHandler(this.odaBosalt_Click);
+            // 
+            // odaTemizle
+            // 
+            this.odaTemizle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.odaTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.odaTemizle.FlatAppearance.BorderSize = 0;
+            this.odaTemizle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.odaTemizle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.odaTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.odaTemizle.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.odaTemizle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.odaTemizle.ImageKey = "cleaning-products.png";
+            this.odaTemizle.ImageList = this.icons;
+            this.odaTemizle.Location = new System.Drawing.Point(484, 602);
+            this.odaTemizle.Name = "odaTemizle";
+            this.odaTemizle.Size = new System.Drawing.Size(118, 115);
+            this.odaTemizle.TabIndex = 132;
+            this.odaTemizle.Text = "Oda Temizle";
+            this.odaTemizle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.odaTemizle.UseVisualStyleBackColor = true;
+            this.odaTemizle.Click += new System.EventHandler(this.odaTemizle_Click);
+            // 
+            // odaHazır
+            // 
+            this.odaHazır.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.odaHazır.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.odaHazır.FlatAppearance.BorderSize = 0;
+            this.odaHazır.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.odaHazır.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.odaHazır.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.odaHazır.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.odaHazır.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.odaHazır.ImageKey = "approval.png";
+            this.odaHazır.ImageList = this.icons;
+            this.odaHazır.Location = new System.Drawing.Point(677, 602);
+            this.odaHazır.Name = "odaHazır";
+            this.odaHazır.Size = new System.Drawing.Size(110, 115);
+            this.odaHazır.TabIndex = 133;
+            this.odaHazır.Text = "Oda  Hazır";
+            this.odaHazır.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.odaHazır.UseVisualStyleBackColor = true;
+            this.odaHazır.Click += new System.EventHandler(this.odaHazır_Click);
+            // 
+            // mUSTERİLER
+            // 
+            this.mUSTERİLER.DataSetName = "MUSTERİLER";
+            this.mUSTERİLER.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblOdaTableAdapter
+            // 
+            this.tblOdaTableAdapter.ClearBeforeFill = true;
             // 
             // odaListesi
             // 
