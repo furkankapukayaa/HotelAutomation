@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="dbFurkanOtelDataSetSIL" targetNamespace="http://tempuri.org/dbFurkanOtelDataSetSIL.xsd" xmlns:mstns="http://tempuri.org/dbFurkanOtelDataSetSIL.xsd" xmlns="http://tempuri.org/dbFurkanOtelDataSetSIL.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="UYELER" targetNamespace="http://tempuri.org/UYELER.xsd" xmlns:mstns="http://tempuri.org/UYELER.xsd" xmlns="http://tempuri.org/UYELER.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -103,7 +103,7 @@ SELECT uyeid, uyeadsoyad, uyekullaniciadi, uyesifre, uyeyetki, uyemail, uyetelef
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dbFurkanOtelDataSetSIL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbFurkanOtelDataSetSIL" msprop:Generator_UserDSName="dbFurkanOtelDataSetSIL">
+  <xs:element name="UYELER" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="UYELER" msprop:Generator_UserDSName="UYELER">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="tblUye" msprop:Generator_TableClassName="tblUyeDataTable" msprop:Generator_TableVarName="tabletblUye" msprop:Generator_TablePropName="tblUye" msprop:Generator_RowDeletingName="tblUyeRowDeleting" msprop:Generator_RowChangingName="tblUyeRowChanging" msprop:Generator_RowEvHandlerName="tblUyeRowChangeEventHandler" msprop:Generator_RowDeletedName="tblUyeRowDeleted" msprop:Generator_UserTableName="tblUye" msprop:Generator_RowChangedName="tblUyeRowChanged" msprop:Generator_RowEvArgName="tblUyeRowChangeEvent" msprop:Generator_RowClassName="tblUyeRow">

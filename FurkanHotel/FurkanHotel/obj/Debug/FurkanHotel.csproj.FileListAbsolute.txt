@@ -25,7 +25,6 @@ C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHo
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.bildirim.resources
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.girisEkrani.resources
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.musteriİslemleri.resources
-C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.odalar.resources
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.odaİslemleri.resources
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.profil.resources
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.Properties.Resources.resources
@@ -36,3 +35,4 @@ C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHo
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.exe
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.pdb
+C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.odaListesi.resources

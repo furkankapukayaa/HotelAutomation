@@ -38,14 +38,9 @@ namespace FurkanHotel
             this.icons = new System.Windows.Forms.ImageList(this.components);
             this.ıd = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblOdaBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.oDALAR = new FurkanHotel.ODALAR();
             this.tblOdaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dbFurkanOtelDataSetODA2 = new FurkanHotel.dbFurkanOtelDataSetODA2();
             this.tblOdaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.guncelle = new System.Windows.Forms.Button();
             this.geriDon = new System.Windows.Forms.Button();
@@ -65,10 +60,17 @@ namespace FurkanHotel
             this.temizlik = new System.Windows.Forms.Button();
             this.lblOdaDurum = new System.Windows.Forms.Label();
             this.odaDurum = new System.Windows.Forms.ComboBox();
-            this.tblOdaTableAdapter1 = new FurkanHotel.dbFurkanOtelDataSetODA2TableAdapters.tblOdaTableAdapter();
+            this.tblOdaTableAdapter = new FurkanHotel.ODALARTableAdapters.tblOdaTableAdapter();
+            this.odaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odaadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odaturDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odakisisayisiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odaaciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.odadurumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oDALAR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetODA2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,13 +166,13 @@ namespace FurkanHotel
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.dataGridView1.DataSource = this.tblOdaBindingSource1;
+            this.odaidDataGridViewTextBoxColumn,
+            this.odaadDataGridViewTextBoxColumn,
+            this.odaturDataGridViewTextBoxColumn,
+            this.odakisisayisiDataGridViewTextBoxColumn,
+            this.odaaciklamaDataGridViewTextBoxColumn,
+            this.odadurumDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblOdaBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -179,62 +181,19 @@ namespace FurkanHotel
             this.dataGridView1.TabIndex = 179;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // tblOdaBindingSource2
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "odaid";
-            this.dataGridViewTextBoxColumn1.HeaderText = "odaid";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.tblOdaBindingSource2.DataMember = "tblOda";
+            this.tblOdaBindingSource2.DataSource = this.oDALAR;
             // 
-            // dataGridViewTextBoxColumn2
+            // oDALAR
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "odaad";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Oda Adı";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "odatur";
-            this.dataGridViewTextBoxColumn3.HeaderText = "odatur";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "odakisisayisi";
-            this.dataGridViewTextBoxColumn4.HeaderText = "odakisisayisi";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "odaaciklama";
-            this.dataGridViewTextBoxColumn5.HeaderText = "odaaciklama";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "odadurum";
-            this.dataGridViewTextBoxColumn6.HeaderText = "odadurum";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Visible = false;
+            this.oDALAR.DataSetName = "ODALAR";
+            this.oDALAR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblOdaBindingSource1
             // 
             this.tblOdaBindingSource1.DataMember = "tblOda";
-            this.tblOdaBindingSource1.DataSource = this.dbFurkanOtelDataSetODA2;
-            // 
-            // dbFurkanOtelDataSetODA2
-            // 
-            this.dbFurkanOtelDataSetODA2.DataSetName = "dbFurkanOtelDataSetODA2";
-            this.dbFurkanOtelDataSetODA2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblOdaBindingSource
             // 
@@ -530,9 +489,56 @@ namespace FurkanHotel
             this.odaDurum.Size = new System.Drawing.Size(157, 31);
             this.odaDurum.TabIndex = 206;
             // 
-            // tblOdaTableAdapter1
+            // tblOdaTableAdapter
             // 
-            this.tblOdaTableAdapter1.ClearBeforeFill = true;
+            this.tblOdaTableAdapter.ClearBeforeFill = true;
+            // 
+            // odaidDataGridViewTextBoxColumn
+            // 
+            this.odaidDataGridViewTextBoxColumn.DataPropertyName = "odaid";
+            this.odaidDataGridViewTextBoxColumn.HeaderText = "odaid";
+            this.odaidDataGridViewTextBoxColumn.Name = "odaidDataGridViewTextBoxColumn";
+            this.odaidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.odaidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // odaadDataGridViewTextBoxColumn
+            // 
+            this.odaadDataGridViewTextBoxColumn.DataPropertyName = "odaad";
+            this.odaadDataGridViewTextBoxColumn.HeaderText = "Oda Adı";
+            this.odaadDataGridViewTextBoxColumn.Name = "odaadDataGridViewTextBoxColumn";
+            this.odaadDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // odaturDataGridViewTextBoxColumn
+            // 
+            this.odaturDataGridViewTextBoxColumn.DataPropertyName = "odatur";
+            this.odaturDataGridViewTextBoxColumn.HeaderText = "odatur";
+            this.odaturDataGridViewTextBoxColumn.Name = "odaturDataGridViewTextBoxColumn";
+            this.odaturDataGridViewTextBoxColumn.ReadOnly = true;
+            this.odaturDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // odakisisayisiDataGridViewTextBoxColumn
+            // 
+            this.odakisisayisiDataGridViewTextBoxColumn.DataPropertyName = "odakisisayisi";
+            this.odakisisayisiDataGridViewTextBoxColumn.HeaderText = "odakisisayisi";
+            this.odakisisayisiDataGridViewTextBoxColumn.Name = "odakisisayisiDataGridViewTextBoxColumn";
+            this.odakisisayisiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.odakisisayisiDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // odaaciklamaDataGridViewTextBoxColumn
+            // 
+            this.odaaciklamaDataGridViewTextBoxColumn.DataPropertyName = "odaaciklama";
+            this.odaaciklamaDataGridViewTextBoxColumn.HeaderText = "odaaciklama";
+            this.odaaciklamaDataGridViewTextBoxColumn.Name = "odaaciklamaDataGridViewTextBoxColumn";
+            this.odaaciklamaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.odaaciklamaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // odadurumDataGridViewTextBoxColumn
+            // 
+            this.odadurumDataGridViewTextBoxColumn.DataPropertyName = "odadurum";
+            this.odadurumDataGridViewTextBoxColumn.HeaderText = "odadurum";
+            this.odadurumDataGridViewTextBoxColumn.Name = "odadurumDataGridViewTextBoxColumn";
+            this.odadurumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.odadurumDataGridViewTextBoxColumn.Visible = false;
             // 
             // odaİslemleri
             // 
@@ -569,8 +575,9 @@ namespace FurkanHotel
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.odaİslemleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oDALAR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetODA2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -605,14 +612,15 @@ namespace FurkanHotel
         private System.Windows.Forms.Label lblOdaDurum;
         private System.Windows.Forms.ComboBox odaDurum;
         private System.Windows.Forms.BindingSource tblOdaBindingSource;
-        private dbFurkanOtelDataSetODA2 dbFurkanOtelDataSetODA2;
         private System.Windows.Forms.BindingSource tblOdaBindingSource1;
-        private dbFurkanOtelDataSetODA2TableAdapters.tblOdaTableAdapter tblOdaTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private ODALAR oDALAR;
+        private System.Windows.Forms.BindingSource tblOdaBindingSource2;
+        private ODALARTableAdapters.tblOdaTableAdapter tblOdaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn odaidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn odaadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn odaturDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn odakisisayisiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn odaaciklamaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn odadurumDataGridViewTextBoxColumn;
     }
 }

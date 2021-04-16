@@ -84,8 +84,9 @@ namespace FurkanHotel
 
         private void girisEkrani_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'uYELER.tblUye' table. You can move, or remove it, as needed.
+            this.tblUyeTableAdapter.Fill(this.uYELER.tblUye);
             // TODO: This line of code loads data into the 'dbFurkanOtelDataSetSIL.tblUye' table. You can move, or remove it, as needed.
-            this.tblUyeTableAdapter.Fill(this.dbFurkanOtelDataSetSIL.tblUye);
             kullaniciAdi.Focus();
             sifreGoster.Visible = false;
             ToolTip Aciklama = new ToolTip();

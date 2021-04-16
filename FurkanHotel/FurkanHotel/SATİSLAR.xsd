@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="dbFurkanOtelDataSetSATİS" targetNamespace="http://tempuri.org/dbFurkanOtelDataSetSATİS.xsd" xmlns:mstns="http://tempuri.org/dbFurkanOtelDataSetSATİS.xsd" xmlns="http://tempuri.org/dbFurkanOtelDataSetSATİS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="SATİSLAR" targetNamespace="http://tempuri.org/SATİSLAR.xsd" xmlns:mstns="http://tempuri.org/SATİSLAR.xsd" xmlns="http://tempuri.org/SATİSLAR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -89,7 +89,7 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dbFurkanOtelDataSetSATİS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbFurkanOtelDataSetSATİS" msprop:Generator_UserDSName="dbFurkanOtelDataSetSATİS">
+  <xs:element name="SATİSLAR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SATİSLAR" msprop:Generator_UserDSName="SATİSLAR">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="tblSatis" msprop:Generator_TableClassName="tblSatisDataTable" msprop:Generator_TableVarName="tabletblSatis" msprop:Generator_TablePropName="tblSatis" msprop:Generator_RowDeletingName="tblSatisRowDeleting" msprop:Generator_RowChangingName="tblSatisRowChanging" msprop:Generator_RowEvHandlerName="tblSatisRowChangeEventHandler" msprop:Generator_RowDeletedName="tblSatisRowDeleted" msprop:Generator_UserTableName="tblSatis" msprop:Generator_RowChangedName="tblSatisRowChanged" msprop:Generator_RowEvArgName="tblSatisRowChangeEvent" msprop:Generator_RowClassName="tblSatisRow">

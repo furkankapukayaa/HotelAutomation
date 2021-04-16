@@ -20,9 +20,9 @@ namespace FurkanHotel {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("dbFurkanOtelDataSetSATİS")]
+    [global::System.Xml.Serialization.XmlRootAttribute("SATİSLAR")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class dbFurkanOtelDataSetSATİS : global::System.Data.DataSet {
+    public partial class SATİSLAR : global::System.Data.DataSet {
         
         private tblSatisDataTable tabletblSatis;
         
@@ -30,7 +30,7 @@ namespace FurkanHotel {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public dbFurkanOtelDataSetSATİS() {
+        public SATİSLAR() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace FurkanHotel {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected dbFurkanOtelDataSetSATİS(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected SATİSLAR(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace FurkanHotel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            dbFurkanOtelDataSetSATİS cln = ((dbFurkanOtelDataSetSATİS)(base.Clone()));
+            SATİSLAR cln = ((SATİSLAR)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace FurkanHotel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "dbFurkanOtelDataSetSATİS";
+            this.DataSetName = "SATİSLAR";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/dbFurkanOtelDataSetSATİS.xsd";
+            this.Namespace = "http://tempuri.org/SATİSLAR.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabletblSatis = new tblSatisDataTable();
@@ -225,7 +225,7 @@ namespace FurkanHotel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            dbFurkanOtelDataSetSATİS ds = new dbFurkanOtelDataSetSATİS();
+            SATİSLAR ds = new SATİSLAR();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -550,7 +550,7 @@ namespace FurkanHotel {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dbFurkanOtelDataSetSATİS ds = new dbFurkanOtelDataSetSATİS();
+                SATİSLAR ds = new SATİSLAR();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -810,7 +810,7 @@ namespace FurkanHotel {
         }
     }
 }
-namespace FurkanHotel.dbFurkanOtelDataSetSATİSTableAdapters {
+namespace FurkanHotel.SATİSLARTableAdapters {
     
     
     /// <summary>
@@ -1012,7 +1012,7 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dbFurkanOtelDataSetSATİS.tblSatisDataTable dataTable) {
+        public virtual int Fill(SATİSLAR.tblSatisDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1025,9 +1025,9 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dbFurkanOtelDataSetSATİS.tblSatisDataTable GetData() {
+        public virtual SATİSLAR.tblSatisDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dbFurkanOtelDataSetSATİS.tblSatisDataTable dataTable = new dbFurkanOtelDataSetSATİS.tblSatisDataTable();
+            SATİSLAR.tblSatisDataTable dataTable = new SATİSLAR.tblSatisDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1035,14 +1035,14 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dbFurkanOtelDataSetSATİS.tblSatisDataTable dataTable) {
+        public virtual int Update(SATİSLAR.tblSatisDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dbFurkanOtelDataSetSATİS dataSet) {
+        public virtual int Update(SATİSLAR dataSet) {
             return this.Adapter.Update(dataSet, "tblSatis");
         }
         
@@ -1367,7 +1367,7 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(dbFurkanOtelDataSetSATİS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(SATİSLAR dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tblSatisTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.tblSatis.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1386,7 +1386,7 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(dbFurkanOtelDataSetSATİS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(SATİSLAR dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tblSatisTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.tblSatis.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1404,7 +1404,7 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(dbFurkanOtelDataSetSATİS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(SATİSLAR dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tblSatisTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tblSatis.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1446,7 +1446,7 @@ SELECT satisid, satisadsoyad, satisodaadi, satisfiyat, satisodendimi, satisodeme
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(dbFurkanOtelDataSetSATİS dataSet) {
+        public virtual int UpdateAll(SATİSLAR dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

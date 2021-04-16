@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="dbFurkanOtelDataSetsatisoda2" targetNamespace="http://tempuri.org/dbFurkanOtelDataSetsatisoda2.xsd" xmlns:mstns="http://tempuri.org/dbFurkanOtelDataSetsatisoda2.xsd" xmlns="http://tempuri.org/dbFurkanOtelDataSetsatisoda2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="ODALAR" targetNamespace="http://tempuri.org/ODALAR.xsd" xmlns:mstns="http://tempuri.org/ODALAR.xsd" xmlns="http://tempuri.org/ODALAR.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -89,7 +89,7 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dbFurkanOtelDataSetsatisoda2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbFurkanOtelDataSetsatisoda2" msprop:Generator_UserDSName="dbFurkanOtelDataSetsatisoda2">
+  <xs:element name="ODALAR" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ODALAR" msprop:Generator_UserDSName="ODALAR">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="tblOda" msprop:Generator_TableClassName="tblOdaDataTable" msprop:Generator_TableVarName="tabletblOda" msprop:Generator_TablePropName="tblOda" msprop:Generator_RowDeletingName="tblOdaRowDeleting" msprop:Generator_RowChangingName="tblOdaRowChanging" msprop:Generator_RowEvHandlerName="tblOdaRowChangeEventHandler" msprop:Generator_RowDeletedName="tblOdaRowDeleted" msprop:Generator_UserTableName="tblOda" msprop:Generator_RowChangedName="tblOdaRowChanged" msprop:Generator_RowEvArgName="tblOdaRowChangeEvent" msprop:Generator_RowClassName="tblOdaRow">

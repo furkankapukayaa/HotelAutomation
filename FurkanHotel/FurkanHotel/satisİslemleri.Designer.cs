@@ -33,29 +33,11 @@ namespace FurkanHotel
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(satisİslemleri));
             this.geriDon = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.musteriidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musteritcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musteriadsoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musterimailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musteritelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musteriaracDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musterigiristarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mustericikistarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musteriodanoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblMusteriBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbFurkanOtelDataSetMUSTERİSATİS = new FurkanHotel.dbFurkanOtelDataSetMUSTERİSATİS();
+            this.mUSTERİLER = new FurkanHotel.MUSTERİLER();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.odaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaturDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odakisisayisiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odaaciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.odadurumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tblOdaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dbFurkanOtelDataSetsatisoda2 = new FurkanHotel.dbFurkanOtelDataSetsatisoda2();
             this.tblOdaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbFurkanOtelDataSetODASATİS = new FurkanHotel.dbFurkanOtelDataSetODASATİS();
-            this.tblMusteriTableAdapter = new FurkanHotel.dbFurkanOtelDataSetMUSTERİSATİSTableAdapters.tblMusteriTableAdapter();
+            this.oDALAR = new FurkanHotel.ODALAR();
             this.lblOdaId = new System.Windows.Forms.Label();
             this.lblSatisFiyat = new System.Windows.Forms.Label();
             this.lblSatisOdendiMi = new System.Windows.Forms.Label();
@@ -65,15 +47,8 @@ namespace FurkanHotel
             this.guncelle = new System.Windows.Forms.Button();
             this.sil = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.satisidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.satisadsoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.satisodaadiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.satisfiyatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.satisodendimiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.satisodemeyontemiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblSatisBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbFurkanOtelDataSetSATİS = new FurkanHotel.dbFurkanOtelDataSetSATİS();
-            this.tblSatisTableAdapter = new FurkanHotel.dbFurkanOtelDataSetSATİSTableAdapters.tblSatisTableAdapter();
+            this.sATİSLAR = new FurkanHotel.SATİSLAR();
             this.musteriId = new System.Windows.Forms.TextBox();
             this.odaId = new System.Windows.Forms.TextBox();
             this.musteriOdaNo = new System.Windows.Forms.TextBox();
@@ -114,21 +89,41 @@ namespace FurkanHotel
             this.satisOdemeYontemi = new System.Windows.Forms.ComboBox();
             this.satisAdSoyad = new System.Windows.Forms.TextBox();
             this.satisOdaAdi = new System.Windows.Forms.TextBox();
-            this.tblOdaTableAdapter = new FurkanHotel.dbFurkanOtelDataSetODASATİSTableAdapters.tblOdaTableAdapter();
             this.odaDurum = new System.Windows.Forms.ComboBox();
             this.lblOdaDurum = new System.Windows.Forms.Label();
-            this.tblOdaTableAdapter1 = new FurkanHotel.dbFurkanOtelDataSetsatisoda2TableAdapters.tblOdaTableAdapter();
+            this.tblMusteriTableAdapter = new FurkanHotel.MUSTERİLERTableAdapters.tblMusteriTableAdapter();
+            this.tblOdaTableAdapter = new FurkanHotel.ODALARTableAdapters.tblOdaTableAdapter();
+            this.tblSatisTableAdapter = new FurkanHotel.SATİSLARTableAdapters.tblSatisTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblMusteriBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetMUSTERİSATİS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mUSTERİLER)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetsatisoda2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetODASATİS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oDALAR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSatisBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetSATİS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sATİSLAR)).BeginInit();
             this.SuspendLayout();
             // 
             // geriDon
@@ -165,97 +160,34 @@ namespace FurkanHotel
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.musteriidDataGridViewTextBoxColumn,
-            this.musteritcDataGridViewTextBoxColumn,
-            this.musteriadsoyadDataGridViewTextBoxColumn,
-            this.musterimailDataGridViewTextBoxColumn,
-            this.musteritelefonDataGridViewTextBoxColumn,
-            this.musteriaracDataGridViewTextBoxColumn,
-            this.musterigiristarihDataGridViewTextBoxColumn,
-            this.mustericikistarihDataGridViewTextBoxColumn,
-            this.musteriodanoDataGridViewTextBoxColumn});
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
             this.dataGridView1.DataSource = this.tblMusteriBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(11, 17);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1447, 128);
+            this.dataGridView1.Size = new System.Drawing.Size(1433, 128);
             this.dataGridView1.TabIndex = 127;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // musteriidDataGridViewTextBoxColumn
-            // 
-            this.musteriidDataGridViewTextBoxColumn.DataPropertyName = "musteriid";
-            this.musteriidDataGridViewTextBoxColumn.HeaderText = "Müşteri Id";
-            this.musteriidDataGridViewTextBoxColumn.Name = "musteriidDataGridViewTextBoxColumn";
-            this.musteriidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musteritcDataGridViewTextBoxColumn
-            // 
-            this.musteritcDataGridViewTextBoxColumn.DataPropertyName = "musteritc";
-            this.musteritcDataGridViewTextBoxColumn.HeaderText = "Müşteri TC";
-            this.musteritcDataGridViewTextBoxColumn.Name = "musteritcDataGridViewTextBoxColumn";
-            this.musteritcDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musteriadsoyadDataGridViewTextBoxColumn
-            // 
-            this.musteriadsoyadDataGridViewTextBoxColumn.DataPropertyName = "musteriadsoyad";
-            this.musteriadsoyadDataGridViewTextBoxColumn.HeaderText = "Müşteri Ad Soyad";
-            this.musteriadsoyadDataGridViewTextBoxColumn.Name = "musteriadsoyadDataGridViewTextBoxColumn";
-            this.musteriadsoyadDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musterimailDataGridViewTextBoxColumn
-            // 
-            this.musterimailDataGridViewTextBoxColumn.DataPropertyName = "musterimail";
-            this.musterimailDataGridViewTextBoxColumn.HeaderText = "Müşteri Mail";
-            this.musterimailDataGridViewTextBoxColumn.Name = "musterimailDataGridViewTextBoxColumn";
-            this.musterimailDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musteritelefonDataGridViewTextBoxColumn
-            // 
-            this.musteritelefonDataGridViewTextBoxColumn.DataPropertyName = "musteritelefon";
-            this.musteritelefonDataGridViewTextBoxColumn.HeaderText = "Müşteri Telefon";
-            this.musteritelefonDataGridViewTextBoxColumn.Name = "musteritelefonDataGridViewTextBoxColumn";
-            this.musteritelefonDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musteriaracDataGridViewTextBoxColumn
-            // 
-            this.musteriaracDataGridViewTextBoxColumn.DataPropertyName = "musteriarac";
-            this.musteriaracDataGridViewTextBoxColumn.HeaderText = "Müşteri Araç";
-            this.musteriaracDataGridViewTextBoxColumn.Name = "musteriaracDataGridViewTextBoxColumn";
-            this.musteriaracDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musterigiristarihDataGridViewTextBoxColumn
-            // 
-            this.musterigiristarihDataGridViewTextBoxColumn.DataPropertyName = "musterigiristarih";
-            this.musterigiristarihDataGridViewTextBoxColumn.HeaderText = "Müşteri Giriş Tarihi";
-            this.musterigiristarihDataGridViewTextBoxColumn.Name = "musterigiristarihDataGridViewTextBoxColumn";
-            this.musterigiristarihDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // mustericikistarihDataGridViewTextBoxColumn
-            // 
-            this.mustericikistarihDataGridViewTextBoxColumn.DataPropertyName = "mustericikistarih";
-            this.mustericikistarihDataGridViewTextBoxColumn.HeaderText = "Müşteri Çıkış Tarihi";
-            this.mustericikistarihDataGridViewTextBoxColumn.Name = "mustericikistarihDataGridViewTextBoxColumn";
-            this.mustericikistarihDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musteriodanoDataGridViewTextBoxColumn
-            // 
-            this.musteriodanoDataGridViewTextBoxColumn.DataPropertyName = "musteriodano";
-            this.musteriodanoDataGridViewTextBoxColumn.HeaderText = "Müşteri Oda No";
-            this.musteriodanoDataGridViewTextBoxColumn.Name = "musteriodanoDataGridViewTextBoxColumn";
-            this.musteriodanoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tblMusteriBindingSource
             // 
             this.tblMusteriBindingSource.DataMember = "tblMusteri";
-            this.tblMusteriBindingSource.DataSource = this.dbFurkanOtelDataSetMUSTERİSATİS;
+            this.tblMusteriBindingSource.DataSource = this.mUSTERİLER;
             // 
-            // dbFurkanOtelDataSetMUSTERİSATİS
+            // mUSTERİLER
             // 
-            this.dbFurkanOtelDataSetMUSTERİSATİS.DataSetName = "dbFurkanOtelDataSetMUSTERİSATİS";
-            this.dbFurkanOtelDataSetMUSTERİSATİS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.mUSTERİLER.DataSetName = "MUSTERİLER";
+            this.mUSTERİLER.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridView2
             // 
@@ -272,87 +204,31 @@ namespace FurkanHotel
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.odaidDataGridViewTextBoxColumn,
-            this.odaadDataGridViewTextBoxColumn,
-            this.odaturDataGridViewTextBoxColumn,
-            this.odakisisayisiDataGridViewTextBoxColumn,
-            this.odaaciklamaDataGridViewTextBoxColumn,
-            this.odadurumDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.tblOdaBindingSource1;
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15});
+            this.dataGridView2.DataSource = this.tblOdaBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(11, 151);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1447, 128);
+            this.dataGridView2.Size = new System.Drawing.Size(1433, 128);
             this.dataGridView2.TabIndex = 128;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
-            // 
-            // odaidDataGridViewTextBoxColumn
-            // 
-            this.odaidDataGridViewTextBoxColumn.DataPropertyName = "odaid";
-            this.odaidDataGridViewTextBoxColumn.HeaderText = "Oda Id";
-            this.odaidDataGridViewTextBoxColumn.Name = "odaidDataGridViewTextBoxColumn";
-            this.odaidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // odaadDataGridViewTextBoxColumn
-            // 
-            this.odaadDataGridViewTextBoxColumn.DataPropertyName = "odaad";
-            this.odaadDataGridViewTextBoxColumn.HeaderText = "Oda Adı";
-            this.odaadDataGridViewTextBoxColumn.Name = "odaadDataGridViewTextBoxColumn";
-            this.odaadDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // odaturDataGridViewTextBoxColumn
-            // 
-            this.odaturDataGridViewTextBoxColumn.DataPropertyName = "odatur";
-            this.odaturDataGridViewTextBoxColumn.HeaderText = "Oda Türü";
-            this.odaturDataGridViewTextBoxColumn.Name = "odaturDataGridViewTextBoxColumn";
-            this.odaturDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // odakisisayisiDataGridViewTextBoxColumn
-            // 
-            this.odakisisayisiDataGridViewTextBoxColumn.DataPropertyName = "odakisisayisi";
-            this.odakisisayisiDataGridViewTextBoxColumn.HeaderText = "Oda Kişi Sayısı";
-            this.odakisisayisiDataGridViewTextBoxColumn.Name = "odakisisayisiDataGridViewTextBoxColumn";
-            this.odakisisayisiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // odaaciklamaDataGridViewTextBoxColumn
-            // 
-            this.odaaciklamaDataGridViewTextBoxColumn.DataPropertyName = "odaaciklama";
-            this.odaaciklamaDataGridViewTextBoxColumn.HeaderText = "Oda Açıklama";
-            this.odaaciklamaDataGridViewTextBoxColumn.Name = "odaaciklamaDataGridViewTextBoxColumn";
-            this.odaaciklamaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // odadurumDataGridViewTextBoxColumn
-            // 
-            this.odadurumDataGridViewTextBoxColumn.DataPropertyName = "odadurum";
-            this.odadurumDataGridViewTextBoxColumn.HeaderText = "Oda Durumu";
-            this.odadurumDataGridViewTextBoxColumn.Name = "odadurumDataGridViewTextBoxColumn";
-            this.odadurumDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tblOdaBindingSource1
-            // 
-            this.tblOdaBindingSource1.DataMember = "tblOda";
-            this.tblOdaBindingSource1.DataSource = this.dbFurkanOtelDataSetsatisoda2;
-            // 
-            // dbFurkanOtelDataSetsatisoda2
-            // 
-            this.dbFurkanOtelDataSetsatisoda2.DataSetName = "dbFurkanOtelDataSetsatisoda2";
-            this.dbFurkanOtelDataSetsatisoda2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblOdaBindingSource
             // 
             this.tblOdaBindingSource.DataMember = "tblOda";
-            this.tblOdaBindingSource.DataSource = this.dbFurkanOtelDataSetODASATİS;
+            this.tblOdaBindingSource.DataSource = this.oDALAR;
             // 
-            // dbFurkanOtelDataSetODASATİS
+            // oDALAR
             // 
-            this.dbFurkanOtelDataSetODASATİS.DataSetName = "dbFurkanOtelDataSetODASATİS";
-            this.dbFurkanOtelDataSetODASATİS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblMusteriTableAdapter
-            // 
-            this.tblMusteriTableAdapter.ClearBeforeFill = true;
+            this.oDALAR.DataSetName = "ODALAR";
+            this.oDALAR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblOdaId
             // 
@@ -495,75 +371,29 @@ namespace FurkanHotel
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.satisidDataGridViewTextBoxColumn,
-            this.satisadsoyadDataGridViewTextBoxColumn,
-            this.satisodaadiDataGridViewTextBoxColumn,
-            this.satisfiyatDataGridViewTextBoxColumn,
-            this.satisodendimiDataGridViewTextBoxColumn,
-            this.satisodemeyontemiDataGridViewTextBoxColumn});
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21});
             this.dataGridView3.DataSource = this.tblSatisBindingSource;
             this.dataGridView3.Location = new System.Drawing.Point(11, 284);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(1447, 128);
+            this.dataGridView3.Size = new System.Drawing.Size(1433, 128);
             this.dataGridView3.TabIndex = 198;
             this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellClick);
-            // 
-            // satisidDataGridViewTextBoxColumn
-            // 
-            this.satisidDataGridViewTextBoxColumn.DataPropertyName = "satisid";
-            this.satisidDataGridViewTextBoxColumn.HeaderText = "Satış Id";
-            this.satisidDataGridViewTextBoxColumn.Name = "satisidDataGridViewTextBoxColumn";
-            this.satisidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // satisadsoyadDataGridViewTextBoxColumn
-            // 
-            this.satisadsoyadDataGridViewTextBoxColumn.DataPropertyName = "satisadsoyad";
-            this.satisadsoyadDataGridViewTextBoxColumn.HeaderText = "Satış Ad Soyad";
-            this.satisadsoyadDataGridViewTextBoxColumn.Name = "satisadsoyadDataGridViewTextBoxColumn";
-            this.satisadsoyadDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // satisodaadiDataGridViewTextBoxColumn
-            // 
-            this.satisodaadiDataGridViewTextBoxColumn.DataPropertyName = "satisodaadi";
-            this.satisodaadiDataGridViewTextBoxColumn.HeaderText = "Satış Oda Adı";
-            this.satisodaadiDataGridViewTextBoxColumn.Name = "satisodaadiDataGridViewTextBoxColumn";
-            this.satisodaadiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // satisfiyatDataGridViewTextBoxColumn
-            // 
-            this.satisfiyatDataGridViewTextBoxColumn.DataPropertyName = "satisfiyat";
-            this.satisfiyatDataGridViewTextBoxColumn.HeaderText = "Satış Fiyatı";
-            this.satisfiyatDataGridViewTextBoxColumn.Name = "satisfiyatDataGridViewTextBoxColumn";
-            this.satisfiyatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // satisodendimiDataGridViewTextBoxColumn
-            // 
-            this.satisodendimiDataGridViewTextBoxColumn.DataPropertyName = "satisodendimi";
-            this.satisodendimiDataGridViewTextBoxColumn.HeaderText = "Ödendi Mi ?";
-            this.satisodendimiDataGridViewTextBoxColumn.Name = "satisodendimiDataGridViewTextBoxColumn";
-            this.satisodendimiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // satisodemeyontemiDataGridViewTextBoxColumn
-            // 
-            this.satisodemeyontemiDataGridViewTextBoxColumn.DataPropertyName = "satisodemeyontemi";
-            this.satisodemeyontemiDataGridViewTextBoxColumn.HeaderText = "Satış Ödeme Yöntemi";
-            this.satisodemeyontemiDataGridViewTextBoxColumn.Name = "satisodemeyontemiDataGridViewTextBoxColumn";
-            this.satisodemeyontemiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // tblSatisBindingSource
             // 
             this.tblSatisBindingSource.DataMember = "tblSatis";
-            this.tblSatisBindingSource.DataSource = this.dbFurkanOtelDataSetSATİS;
+            this.tblSatisBindingSource.DataSource = this.sATİSLAR;
             // 
-            // dbFurkanOtelDataSetSATİS
+            // sATİSLAR
             // 
-            this.dbFurkanOtelDataSetSATİS.DataSetName = "dbFurkanOtelDataSetSATİS";
-            this.dbFurkanOtelDataSetSATİS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblSatisTableAdapter
-            // 
-            this.tblSatisTableAdapter.ClearBeforeFill = true;
+            this.sATİSLAR.DataSetName = "SATİSLAR";
+            this.sATİSLAR.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // musteriId
             // 
@@ -1061,10 +891,6 @@ namespace FurkanHotel
             this.satisOdaAdi.TabIndex = 235;
             this.satisOdaAdi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tblOdaTableAdapter
-            // 
-            this.tblOdaTableAdapter.ClearBeforeFill = true;
-            // 
             // odaDurum
             // 
             this.odaDurum.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1094,9 +920,164 @@ namespace FurkanHotel
             this.lblOdaDurum.TabIndex = 242;
             this.lblOdaDurum.Text = "Oda Durum :";
             // 
-            // tblOdaTableAdapter1
+            // tblMusteriTableAdapter
             // 
-            this.tblOdaTableAdapter1.ClearBeforeFill = true;
+            this.tblMusteriTableAdapter.ClearBeforeFill = true;
+            // 
+            // tblOdaTableAdapter
+            // 
+            this.tblOdaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tblSatisTableAdapter
+            // 
+            this.tblSatisTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "musteriid";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Müşteri Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "musteritc";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Müşteri TC";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "musteriadsoyad";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Müşteri Ad Soyad";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "musterimail";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Müşteri Mail";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "musteritelefon";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Müşteri Telefon";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "musteriarac";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Müşteri Araç";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "musterigiristarih";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Müşteri Giriş Tarihi";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "mustericikistarih";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Müşteri Çıkış Tarihi";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "musteriodano";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Müşteri Oda No";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "odaid";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Oda Id";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "odaad";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Oda Ad";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "odatur";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Oda Tür";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "odakisisayisi";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Oda Kişi Sayısı";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "odaaciklama";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Oda Açıklama";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "odadurum";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Oda Durum";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "satisid";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Satış Id";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "satisadsoyad";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Satış Ad Soyad";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "satisodaadi";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Satış Oda Adı";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "satisfiyat";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Satış Fiyat";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "satisodendimi";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Satış Ödendi Mi ?";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "satisodemeyontemi";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Satış Ödeme Yöntemi";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.ReadOnly = true;
             // 
             // satisİslemleri
             // 
@@ -1163,15 +1144,13 @@ namespace FurkanHotel
             this.Load += new System.EventHandler(this.satisİslemleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblMusteriBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetMUSTERİSATİS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mUSTERİLER)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetsatisoda2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblOdaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetODASATİS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.oDALAR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSatisBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetSATİS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sATİSLAR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1182,9 +1161,6 @@ namespace FurkanHotel
         private System.Windows.Forms.Button geriDon;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private dbFurkanOtelDataSetMUSTERİSATİS dbFurkanOtelDataSetMUSTERİSATİS;
-        private System.Windows.Forms.BindingSource tblMusteriBindingSource;
-        private dbFurkanOtelDataSetMUSTERİSATİSTableAdapters.tblMusteriTableAdapter tblMusteriTableAdapter;
         private System.Windows.Forms.Label lblOdaId;
         private System.Windows.Forms.Label lblSatisFiyat;
         private System.Windows.Forms.Label lblSatisOdendiMi;
@@ -1193,9 +1169,6 @@ namespace FurkanHotel
         private System.Windows.Forms.Button guncelle;
         private System.Windows.Forms.Button sil;
         private System.Windows.Forms.DataGridView dataGridView3;
-        private dbFurkanOtelDataSetSATİS dbFurkanOtelDataSetSATİS;
-        private System.Windows.Forms.BindingSource tblSatisBindingSource;
-        private dbFurkanOtelDataSetSATİSTableAdapters.tblSatisTableAdapter tblSatisTableAdapter;
         private System.Windows.Forms.TextBox musteriId;
         private System.Windows.Forms.TextBox odaId;
         private System.Windows.Forms.TextBox musteriOdaNo;
@@ -1237,34 +1210,37 @@ namespace FurkanHotel
         private System.Windows.Forms.TextBox satisAdSoyad;
         private System.Windows.Forms.TextBox satisOdaAdi;
         private System.Windows.Forms.ImageList icons;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musteriidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musteritcDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musteriadsoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musterimailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musteritelefonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musteriaracDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musterigiristarihDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mustericikistarihDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn musteriodanoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn satisidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn satisadsoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn satisodaadiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn satisfiyatDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn satisodendimiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn satisodemeyontemiDataGridViewTextBoxColumn;
-        private dbFurkanOtelDataSetODASATİS dbFurkanOtelDataSetODASATİS;
-        private System.Windows.Forms.BindingSource tblOdaBindingSource;
-        private dbFurkanOtelDataSetODASATİSTableAdapters.tblOdaTableAdapter tblOdaTableAdapter;
         private System.Windows.Forms.ComboBox odaDurum;
         private System.Windows.Forms.Label lblOdaDurum;
-        private dbFurkanOtelDataSetsatisoda2 dbFurkanOtelDataSetsatisoda2;
-        private System.Windows.Forms.BindingSource tblOdaBindingSource1;
-        private dbFurkanOtelDataSetsatisoda2TableAdapters.tblOdaTableAdapter tblOdaTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaturDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odakisisayisiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odaaciklamaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn odadurumDataGridViewTextBoxColumn;
+        private MUSTERİLER mUSTERİLER;
+        private System.Windows.Forms.BindingSource tblMusteriBindingSource;
+        private MUSTERİLERTableAdapters.tblMusteriTableAdapter tblMusteriTableAdapter;
+        private ODALAR oDALAR;
+        private System.Windows.Forms.BindingSource tblOdaBindingSource;
+        private ODALARTableAdapters.tblOdaTableAdapter tblOdaTableAdapter;
+        private SATİSLAR sATİSLAR;
+        private System.Windows.Forms.BindingSource tblSatisBindingSource;
+        private SATİSLARTableAdapters.tblSatisTableAdapter tblSatisTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
     }
 }

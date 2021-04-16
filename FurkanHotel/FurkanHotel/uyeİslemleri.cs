@@ -27,8 +27,8 @@ namespace FurkanHotel
 
         private void uyeler_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dbFurkanOtelDataSetUYE.tblUye' table. You can move, or remove it, as needed.
-            this.tblUyeTableAdapter.Fill(this.dbFurkanOtelDataSetUYE.tblUye);
+            // TODO: This line of code loads data into the 'uYELER.tblUye' table. You can move, or remove it, as needed.
+            this.tblUyeTableAdapter.Fill(this.uYELER.tblUye);
             Uye uye = new Uye();
             DataTable tblUye = uye.tblUye();
             dataGridView1.DataSource = tblUye;

@@ -27,9 +27,9 @@ namespace FurkanHotel
 
         private void satisİslemleri_Load(object sender, EventArgs e)
         {
-            this.tblOdaTableAdapter1.Fill(this.dbFurkanOtelDataSetsatisoda2.tblOda);
-            this.tblSatisTableAdapter.Fill(this.dbFurkanOtelDataSetSATİS.tblSatis);
-            this.tblMusteriTableAdapter.Fill(this.dbFurkanOtelDataSetMUSTERİSATİS.tblMusteri);
+            this.tblSatisTableAdapter.Fill(this.sATİSLAR.tblSatis);
+            this.tblOdaTableAdapter.Fill(this.oDALAR.tblOda);
+            this.tblMusteriTableAdapter.Fill(this.mUSTERİLER.tblMusteri);
             satisOdendiMi.SelectedIndex = 0;
             satisOdemeYontemi.SelectedIndex = 0;
             odaOdaTur.SelectedIndex = 0;

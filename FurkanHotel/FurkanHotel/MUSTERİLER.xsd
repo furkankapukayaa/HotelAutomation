@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="dbFurkanOtelDataSetMUSTERİ" targetNamespace="http://tempuri.org/dbFurkanOtelDataSetMUSTERİ.xsd" xmlns:mstns="http://tempuri.org/dbFurkanOtelDataSetMUSTERİ.xsd" xmlns="http://tempuri.org/dbFurkanOtelDataSetMUSTERİ.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="MUSTERİLER" targetNamespace="http://tempuri.org/MUSTERİLER.xsd" xmlns:mstns="http://tempuri.org/MUSTERİLER.xsd" xmlns="http://tempuri.org/MUSTERİLER.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -110,7 +110,7 @@ SELECT musteriid, musteritc, musteriadsoyad, musterimail, musteritelefon, muster
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dbFurkanOtelDataSetMUSTERİ" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbFurkanOtelDataSetMUSTERİ" msprop:Generator_UserDSName="dbFurkanOtelDataSetMUSTERİ">
+  <xs:element name="MUSTERİLER" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MUSTERİLER" msprop:Generator_UserDSName="MUSTERİLER">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="tblMusteri" msprop:Generator_TableClassName="tblMusteriDataTable" msprop:Generator_TableVarName="tabletblMusteri" msprop:Generator_TablePropName="tblMusteri" msprop:Generator_RowDeletingName="tblMusteriRowDeleting" msprop:Generator_RowChangingName="tblMusteriRowChanging" msprop:Generator_RowEvHandlerName="tblMusteriRowChangeEventHandler" msprop:Generator_RowDeletedName="tblMusteriRowDeleted" msprop:Generator_UserTableName="tblMusteri" msprop:Generator_RowChangedName="tblMusteriRowChanged" msprop:Generator_RowEvArgName="tblMusteriRowChangeEvent" msprop:Generator_RowClassName="tblMusteriRow">

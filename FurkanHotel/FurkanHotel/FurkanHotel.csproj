@@ -58,46 +58,6 @@
     <Compile Include="bildirim.Designer.cs">
       <DependentUpon>bildirim.cs</DependentUpon>
     </Compile>
-    <Compile Include="dbFurkanOtelDataSetMUSTERİ.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetMUSTERİ.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbFurkanOtelDataSetMUSTERİSATİS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetMUSTERİSATİS.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbFurkanOtelDataSetODA2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetODA2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbFurkanOtelDataSetODASATİS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetODASATİS.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbFurkanOtelDataSetsatisoda2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetsatisoda2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbFurkanOtelDataSetSATİS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetSATİS.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbFurkanOtelDataSetSIL.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetSIL.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="dbFurkanOtelDataSetUYE.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbFurkanOtelDataSetUYE.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Events\Musteri.cs" />
     <Compile Include="Events\Oda.cs" />
     <Compile Include="Events\Satis.cs" />
@@ -114,11 +74,21 @@
     <Compile Include="musteriİslemleri.Designer.cs">
       <DependentUpon>musteriİslemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="odalar.cs">
+    <Compile Include="MUSTERİLER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MUSTERİLER.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="odaListesi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="odalar.Designer.cs">
-      <DependentUpon>odalar.cs</DependentUpon>
+    <Compile Include="odaListesi.Designer.cs">
+      <DependentUpon>odaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ODALAR1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ODALAR.xsd</DependentUpon>
     </Compile>
     <Compile Include="odaİslemleri.cs">
       <SubType>Form</SubType>
@@ -140,11 +110,21 @@
     <Compile Include="satisİslemleri.Designer.cs">
       <DependentUpon>satisİslemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="SATİSLAR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SATİSLAR.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sifremiUnuttum.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="sifremiUnuttum.Designer.cs">
       <DependentUpon>sifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UYELER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UYELER.xsd</DependentUpon>
     </Compile>
     <Compile Include="uyeİslemleri.cs">
       <SubType>Form</SubType>
@@ -164,8 +144,8 @@
     <EmbeddedResource Include="musteriİslemleri.resx">
       <DependentUpon>musteriİslemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="odalar.resx">
-      <DependentUpon>odalar.cs</DependentUpon>
+    <EmbeddedResource Include="odaListesi.resx">
+      <DependentUpon>odaListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="odaİslemleri.resx">
       <DependentUpon>odaİslemleri.cs</DependentUpon>
@@ -191,93 +171,27 @@
     <EmbeddedResource Include="uyeİslemleri.resx">
       <DependentUpon>uyeİslemleri.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="dbFurkanOtelDataSetMUSTERİ.xsc">
-      <DependentUpon>dbFurkanOtelDataSetMUSTERİ.xsd</DependentUpon>
+    <None Include="MUSTERİLER.xsc">
+      <DependentUpon>MUSTERİLER.xsd</DependentUpon>
     </None>
-    <None Include="dbFurkanOtelDataSetMUSTERİ.xsd">
+    <None Include="MUSTERİLER.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetMUSTERİ.Designer.cs</LastGenOutput>
+      <LastGenOutput>MUSTERİLER.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="dbFurkanOtelDataSetMUSTERİ.xss">
-      <DependentUpon>dbFurkanOtelDataSetMUSTERİ.xsd</DependentUpon>
+    <None Include="MUSTERİLER.xss">
+      <DependentUpon>MUSTERİLER.xsd</DependentUpon>
     </None>
-    <None Include="dbFurkanOtelDataSetMUSTERİSATİS.xsc">
-      <DependentUpon>dbFurkanOtelDataSetMUSTERİSATİS.xsd</DependentUpon>
+    <None Include="ODALAR.xsc">
+      <DependentUpon>ODALAR.xsd</DependentUpon>
     </None>
-    <None Include="dbFurkanOtelDataSetMUSTERİSATİS.xsd">
+    <None Include="ODALAR.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetMUSTERİSATİS.Designer.cs</LastGenOutput>
+      <LastGenOutput>ODALAR1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="dbFurkanOtelDataSetMUSTERİSATİS.xss">
-      <DependentUpon>dbFurkanOtelDataSetMUSTERİSATİS.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetODA2.xsc">
-      <DependentUpon>dbFurkanOtelDataSetODA2.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetODA2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetODA2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbFurkanOtelDataSetODA2.xss">
-      <DependentUpon>dbFurkanOtelDataSetODA2.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetODASATİS.xsc">
-      <DependentUpon>dbFurkanOtelDataSetODASATİS.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetODASATİS.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetODASATİS.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbFurkanOtelDataSetODASATİS.xss">
-      <DependentUpon>dbFurkanOtelDataSetODASATİS.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetsatisoda2.xsc">
-      <DependentUpon>dbFurkanOtelDataSetsatisoda2.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetsatisoda2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetsatisoda2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbFurkanOtelDataSetsatisoda2.xss">
-      <DependentUpon>dbFurkanOtelDataSetsatisoda2.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetSATİS.xsc">
-      <DependentUpon>dbFurkanOtelDataSetSATİS.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetSATİS.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetSATİS.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbFurkanOtelDataSetSATİS.xss">
-      <DependentUpon>dbFurkanOtelDataSetSATİS.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetSIL.xsc">
-      <DependentUpon>dbFurkanOtelDataSetSIL.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetSIL.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetSIL.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbFurkanOtelDataSetSIL.xss">
-      <DependentUpon>dbFurkanOtelDataSetSIL.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetUYE.xsc">
-      <DependentUpon>dbFurkanOtelDataSetUYE.xsd</DependentUpon>
-    </None>
-    <None Include="dbFurkanOtelDataSetUYE.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbFurkanOtelDataSetUYE.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dbFurkanOtelDataSetUYE.xss">
-      <DependentUpon>dbFurkanOtelDataSetUYE.xsd</DependentUpon>
+    <None Include="ODALAR.xss">
+      <DependentUpon>ODALAR.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -288,6 +202,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SATİSLAR.xsc">
+      <DependentUpon>SATİSLAR.xsd</DependentUpon>
+    </None>
+    <None Include="SATİSLAR.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SATİSLAR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SATİSLAR.xss">
+      <DependentUpon>SATİSLAR.xsd</DependentUpon>
+    </None>
+    <None Include="UYELER.xsc">
+      <DependentUpon>UYELER.xsd</DependentUpon>
+    </None>
+    <None Include="UYELER.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UYELER.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UYELER.xss">
+      <DependentUpon>UYELER.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

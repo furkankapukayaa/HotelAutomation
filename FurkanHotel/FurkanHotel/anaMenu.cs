@@ -82,7 +82,7 @@ namespace FurkanHotel
 
         private void odalar_Click(object sender, EventArgs e)
         {
-            odalar odalar = new odalar();
+            odaListesi odalar = new odaListesi();
             odalar.Show();
             this.Close();
         }

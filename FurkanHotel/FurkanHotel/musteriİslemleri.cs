@@ -103,8 +103,8 @@ namespace FurkanHotel
 
         private void musteriİslemleri_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dbFurkanOtelDataSetMUSTERİ.tblMusteri' table. You can move, or remove it, as needed.
-            this.tblMusteriTableAdapter.Fill(this.dbFurkanOtelDataSetMUSTERİ.tblMusteri);
+            // TODO: This line of code loads data into the 'mUSTERİLER.tblMusteri' table. You can move, or remove it, as needed.
+            this.tblMusteriTableAdapter.Fill(this.mUSTERİLER.tblMusteri);
             Musteri musteri = new Musteri();
             DataTable tblMusteri = musteri.tblMusteri();
             dataGridView1.DataSource = tblMusteri;

@@ -20,17 +20,17 @@ namespace FurkanHotel {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("dbFurkanOtelDataSetsatisoda2")]
+    [global::System.Xml.Serialization.XmlRootAttribute("MUSTERİLER")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class dbFurkanOtelDataSetsatisoda2 : global::System.Data.DataSet {
+    public partial class MUSTERİLER : global::System.Data.DataSet {
         
-        private tblOdaDataTable tabletblOda;
+        private tblMusteriDataTable tabletblMusteri;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public dbFurkanOtelDataSetsatisoda2() {
+        public MUSTERİLER() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace FurkanHotel {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected dbFurkanOtelDataSetsatisoda2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected MUSTERİLER(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace FurkanHotel {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["tblOda"] != null)) {
-                    base.Tables.Add(new tblOdaDataTable(ds.Tables["tblOda"]));
+                if ((ds.Tables["tblMusteri"] != null)) {
+                    base.Tables.Add(new tblMusteriDataTable(ds.Tables["tblMusteri"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace FurkanHotel {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tblOdaDataTable tblOda {
+        public tblMusteriDataTable tblMusteri {
             get {
-                return this.tabletblOda;
+                return this.tabletblMusteri;
             }
         }
         
@@ -127,7 +127,7 @@ namespace FurkanHotel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            dbFurkanOtelDataSetsatisoda2 cln = ((dbFurkanOtelDataSetsatisoda2)(base.Clone()));
+            MUSTERİLER cln = ((MUSTERİLER)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace FurkanHotel {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["tblOda"] != null)) {
-                    base.Tables.Add(new tblOdaDataTable(ds.Tables["tblOda"]));
+                if ((ds.Tables["tblMusteri"] != null)) {
+                    base.Tables.Add(new tblMusteriDataTable(ds.Tables["tblMusteri"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace FurkanHotel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletblOda = ((tblOdaDataTable)(base.Tables["tblOda"]));
+            this.tabletblMusteri = ((tblMusteriDataTable)(base.Tables["tblMusteri"]));
             if ((initTable == true)) {
-                if ((this.tabletblOda != null)) {
-                    this.tabletblOda.InitVars();
+                if ((this.tabletblMusteri != null)) {
+                    this.tabletblMusteri.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace FurkanHotel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "dbFurkanOtelDataSetsatisoda2";
+            this.DataSetName = "MUSTERİLER";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/dbFurkanOtelDataSetsatisoda2.xsd";
+            this.Namespace = "http://tempuri.org/MUSTERİLER.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletblOda = new tblOdaDataTable();
-            base.Tables.Add(this.tabletblOda);
+            this.tabletblMusteri = new tblMusteriDataTable();
+            base.Tables.Add(this.tabletblMusteri);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializetblOda() {
+        private bool ShouldSerializetblMusteri() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace FurkanHotel {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            dbFurkanOtelDataSetsatisoda2 ds = new dbFurkanOtelDataSetsatisoda2();
+            MUSTERİLER ds = new MUSTERİLER();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,37 @@ namespace FurkanHotel {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void tblOdaRowChangeEventHandler(object sender, tblOdaRowChangeEvent e);
+        public delegate void tblMusteriRowChangeEventHandler(object sender, tblMusteriRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tblOdaDataTable : global::System.Data.TypedTableBase<tblOdaRow> {
+        public partial class tblMusteriDataTable : global::System.Data.TypedTableBase<tblMusteriRow> {
             
-            private global::System.Data.DataColumn columnodaid;
+            private global::System.Data.DataColumn columnmusteriid;
             
-            private global::System.Data.DataColumn columnodaad;
+            private global::System.Data.DataColumn columnmusteritc;
             
-            private global::System.Data.DataColumn columnodatur;
+            private global::System.Data.DataColumn columnmusteriadsoyad;
             
-            private global::System.Data.DataColumn columnodakisisayisi;
+            private global::System.Data.DataColumn columnmusterimail;
             
-            private global::System.Data.DataColumn columnodaaciklama;
+            private global::System.Data.DataColumn columnmusteritelefon;
             
-            private global::System.Data.DataColumn columnodadurum;
+            private global::System.Data.DataColumn columnmusteriarac;
+            
+            private global::System.Data.DataColumn columnmusterigiristarih;
+            
+            private global::System.Data.DataColumn columnmustericikistarih;
+            
+            private global::System.Data.DataColumn columnmusteriodano;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tblOdaDataTable() {
-                this.TableName = "tblOda";
+            public tblMusteriDataTable() {
+                this.TableName = "tblMusteri";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +308,7 @@ namespace FurkanHotel {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal tblOdaDataTable(global::System.Data.DataTable table) {
+            internal tblMusteriDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,56 +325,80 @@ namespace FurkanHotel {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected tblOdaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected tblMusteriDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn odaidColumn {
+            public global::System.Data.DataColumn musteriidColumn {
                 get {
-                    return this.columnodaid;
+                    return this.columnmusteriid;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn odaadColumn {
+            public global::System.Data.DataColumn musteritcColumn {
                 get {
-                    return this.columnodaad;
+                    return this.columnmusteritc;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn odaturColumn {
+            public global::System.Data.DataColumn musteriadsoyadColumn {
                 get {
-                    return this.columnodatur;
+                    return this.columnmusteriadsoyad;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn odakisisayisiColumn {
+            public global::System.Data.DataColumn musterimailColumn {
                 get {
-                    return this.columnodakisisayisi;
+                    return this.columnmusterimail;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn odaaciklamaColumn {
+            public global::System.Data.DataColumn musteritelefonColumn {
                 get {
-                    return this.columnodaaciklama;
+                    return this.columnmusteritelefon;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn odadurumColumn {
+            public global::System.Data.DataColumn musteriaracColumn {
                 get {
-                    return this.columnodadurum;
+                    return this.columnmusteriarac;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn musterigiristarihColumn {
+                get {
+                    return this.columnmusterigiristarih;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn mustericikistarihColumn {
+                get {
+                    return this.columnmustericikistarih;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn musteriodanoColumn {
+                get {
+                    return this.columnmusteriodano;
                 }
             }
             
@@ -383,57 +413,60 @@ namespace FurkanHotel {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tblOdaRow this[int index] {
+            public tblMusteriRow this[int index] {
                 get {
-                    return ((tblOdaRow)(this.Rows[index]));
+                    return ((tblMusteriRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tblOdaRowChangeEventHandler tblOdaRowChanging;
+            public event tblMusteriRowChangeEventHandler tblMusteriRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tblOdaRowChangeEventHandler tblOdaRowChanged;
+            public event tblMusteriRowChangeEventHandler tblMusteriRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tblOdaRowChangeEventHandler tblOdaRowDeleting;
+            public event tblMusteriRowChangeEventHandler tblMusteriRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event tblOdaRowChangeEventHandler tblOdaRowDeleted;
+            public event tblMusteriRowChangeEventHandler tblMusteriRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddtblOdaRow(tblOdaRow row) {
+            public void AddtblMusteriRow(tblMusteriRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tblOdaRow AddtblOdaRow(string odaad, string odatur, string odakisisayisi, string odaaciklama, string odadurum) {
-                tblOdaRow rowtblOdaRow = ((tblOdaRow)(this.NewRow()));
+            public tblMusteriRow AddtblMusteriRow(string musteritc, string musteriadsoyad, string musterimail, string musteritelefon, string musteriarac, System.DateTime musterigiristarih, System.DateTime mustericikistarih, string musteriodano) {
+                tblMusteriRow rowtblMusteriRow = ((tblMusteriRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        odaad,
-                        odatur,
-                        odakisisayisi,
-                        odaaciklama,
-                        odadurum};
-                rowtblOdaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtblOdaRow);
-                return rowtblOdaRow;
+                        musteritc,
+                        musteriadsoyad,
+                        musterimail,
+                        musteritelefon,
+                        musteriarac,
+                        musterigiristarih,
+                        mustericikistarih,
+                        musteriodano};
+                rowtblMusteriRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtblMusteriRow);
+                return rowtblMusteriRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tblOdaRow FindByodaid(int odaid) {
-                return ((tblOdaRow)(this.Rows.Find(new object[] {
-                            odaid})));
+            public tblMusteriRow FindBymusteriid(int musteriid) {
+                return ((tblMusteriRow)(this.Rows.Find(new object[] {
+                            musteriid})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tblOdaDataTable cln = ((tblOdaDataTable)(base.Clone()));
+                tblMusteriDataTable cln = ((tblMusteriDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,74 +474,84 @@ namespace FurkanHotel {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tblOdaDataTable();
+                return new tblMusteriDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnodaid = base.Columns["odaid"];
-                this.columnodaad = base.Columns["odaad"];
-                this.columnodatur = base.Columns["odatur"];
-                this.columnodakisisayisi = base.Columns["odakisisayisi"];
-                this.columnodaaciklama = base.Columns["odaaciklama"];
-                this.columnodadurum = base.Columns["odadurum"];
+                this.columnmusteriid = base.Columns["musteriid"];
+                this.columnmusteritc = base.Columns["musteritc"];
+                this.columnmusteriadsoyad = base.Columns["musteriadsoyad"];
+                this.columnmusterimail = base.Columns["musterimail"];
+                this.columnmusteritelefon = base.Columns["musteritelefon"];
+                this.columnmusteriarac = base.Columns["musteriarac"];
+                this.columnmusterigiristarih = base.Columns["musterigiristarih"];
+                this.columnmustericikistarih = base.Columns["mustericikistarih"];
+                this.columnmusteriodano = base.Columns["musteriodano"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnodaid = new global::System.Data.DataColumn("odaid", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnodaid);
-                this.columnodaad = new global::System.Data.DataColumn("odaad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnodaad);
-                this.columnodatur = new global::System.Data.DataColumn("odatur", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnodatur);
-                this.columnodakisisayisi = new global::System.Data.DataColumn("odakisisayisi", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnodakisisayisi);
-                this.columnodaaciklama = new global::System.Data.DataColumn("odaaciklama", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnodaaciklama);
-                this.columnodadurum = new global::System.Data.DataColumn("odadurum", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnodadurum);
+                this.columnmusteriid = new global::System.Data.DataColumn("musteriid", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusteriid);
+                this.columnmusteritc = new global::System.Data.DataColumn("musteritc", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusteritc);
+                this.columnmusteriadsoyad = new global::System.Data.DataColumn("musteriadsoyad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusteriadsoyad);
+                this.columnmusterimail = new global::System.Data.DataColumn("musterimail", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusterimail);
+                this.columnmusteritelefon = new global::System.Data.DataColumn("musteritelefon", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusteritelefon);
+                this.columnmusteriarac = new global::System.Data.DataColumn("musteriarac", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusteriarac);
+                this.columnmusterigiristarih = new global::System.Data.DataColumn("musterigiristarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusterigiristarih);
+                this.columnmustericikistarih = new global::System.Data.DataColumn("mustericikistarih", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmustericikistarih);
+                this.columnmusteriodano = new global::System.Data.DataColumn("musteriodano", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmusteriodano);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnodaid}, true));
-                this.columnodaid.AutoIncrement = true;
-                this.columnodaid.AutoIncrementSeed = -1;
-                this.columnodaid.AutoIncrementStep = -1;
-                this.columnodaid.AllowDBNull = false;
-                this.columnodaid.ReadOnly = true;
-                this.columnodaid.Unique = true;
-                this.columnodaad.MaxLength = 50;
-                this.columnodatur.MaxLength = 50;
-                this.columnodakisisayisi.MaxLength = 50;
-                this.columnodaaciklama.MaxLength = 250;
-                this.columnodadurum.MaxLength = 50;
+                                this.columnmusteriid}, true));
+                this.columnmusteriid.AutoIncrement = true;
+                this.columnmusteriid.AutoIncrementSeed = -1;
+                this.columnmusteriid.AutoIncrementStep = -1;
+                this.columnmusteriid.AllowDBNull = false;
+                this.columnmusteriid.ReadOnly = true;
+                this.columnmusteriid.Unique = true;
+                this.columnmusteritc.MaxLength = 50;
+                this.columnmusteriadsoyad.MaxLength = 50;
+                this.columnmusterimail.MaxLength = 50;
+                this.columnmusteritelefon.MaxLength = 50;
+                this.columnmusteriarac.MaxLength = 50;
+                this.columnmusteriodano.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tblOdaRow NewtblOdaRow() {
-                return ((tblOdaRow)(this.NewRow()));
+            public tblMusteriRow NewtblMusteriRow() {
+                return ((tblMusteriRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tblOdaRow(builder);
+                return new tblMusteriRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tblOdaRow);
+                return typeof(tblMusteriRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tblOdaRowChanged != null)) {
-                    this.tblOdaRowChanged(this, new tblOdaRowChangeEvent(((tblOdaRow)(e.Row)), e.Action));
+                if ((this.tblMusteriRowChanged != null)) {
+                    this.tblMusteriRowChanged(this, new tblMusteriRowChangeEvent(((tblMusteriRow)(e.Row)), e.Action));
                 }
             }
             
@@ -516,8 +559,8 @@ namespace FurkanHotel {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tblOdaRowChanging != null)) {
-                    this.tblOdaRowChanging(this, new tblOdaRowChangeEvent(((tblOdaRow)(e.Row)), e.Action));
+                if ((this.tblMusteriRowChanging != null)) {
+                    this.tblMusteriRowChanging(this, new tblMusteriRowChangeEvent(((tblMusteriRow)(e.Row)), e.Action));
                 }
             }
             
@@ -525,8 +568,8 @@ namespace FurkanHotel {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tblOdaRowDeleted != null)) {
-                    this.tblOdaRowDeleted(this, new tblOdaRowChangeEvent(((tblOdaRow)(e.Row)), e.Action));
+                if ((this.tblMusteriRowDeleted != null)) {
+                    this.tblMusteriRowDeleted(this, new tblMusteriRowChangeEvent(((tblMusteriRow)(e.Row)), e.Action));
                 }
             }
             
@@ -534,14 +577,14 @@ namespace FurkanHotel {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tblOdaRowDeleting != null)) {
-                    this.tblOdaRowDeleting(this, new tblOdaRowChangeEvent(((tblOdaRow)(e.Row)), e.Action));
+                if ((this.tblMusteriRowDeleting != null)) {
+                    this.tblMusteriRowDeleting(this, new tblMusteriRowChangeEvent(((tblMusteriRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemovetblOdaRow(tblOdaRow row) {
+            public void RemovetblMusteriRow(tblMusteriRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -550,7 +593,7 @@ namespace FurkanHotel {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dbFurkanOtelDataSetsatisoda2 ds = new dbFurkanOtelDataSetsatisoda2();
+                MUSTERİLER ds = new MUSTERİLER();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -568,7 +611,7 @@ namespace FurkanHotel {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tblOdaDataTable";
+                attribute2.FixedValue = "tblMusteriDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -612,166 +655,250 @@ namespace FurkanHotel {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tblOdaRow : global::System.Data.DataRow {
+        public partial class tblMusteriRow : global::System.Data.DataRow {
             
-            private tblOdaDataTable tabletblOda;
+            private tblMusteriDataTable tabletblMusteri;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal tblOdaRow(global::System.Data.DataRowBuilder rb) : 
+            internal tblMusteriRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletblOda = ((tblOdaDataTable)(this.Table));
+                this.tabletblMusteri = ((tblMusteriDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int odaid {
+            public int musteriid {
                 get {
-                    return ((int)(this[this.tabletblOda.odaidColumn]));
+                    return ((int)(this[this.tabletblMusteri.musteriidColumn]));
                 }
                 set {
-                    this[this.tabletblOda.odaidColumn] = value;
+                    this[this.tabletblMusteri.musteriidColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string odaad {
-                get {
-                    try {
-                        return ((string)(this[this.tabletblOda.odaadColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'odaad\' in table \'tblOda\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tabletblOda.odaadColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string odatur {
+            public string musteritc {
                 get {
                     try {
-                        return ((string)(this[this.tabletblOda.odaturColumn]));
+                        return ((string)(this[this.tabletblMusteri.musteritcColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'odatur\' in table \'tblOda\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'musteritc\' in table \'tblMusteri\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletblOda.odaturColumn] = value;
+                    this[this.tabletblMusteri.musteritcColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string odakisisayisi {
+            public string musteriadsoyad {
                 get {
                     try {
-                        return ((string)(this[this.tabletblOda.odakisisayisiColumn]));
+                        return ((string)(this[this.tabletblMusteri.musteriadsoyadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'odakisisayisi\' in table \'tblOda\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'musteriadsoyad\' in table \'tblMusteri\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletblOda.odakisisayisiColumn] = value;
+                    this[this.tabletblMusteri.musteriadsoyadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string odaaciklama {
+            public string musterimail {
                 get {
                     try {
-                        return ((string)(this[this.tabletblOda.odaaciklamaColumn]));
+                        return ((string)(this[this.tabletblMusteri.musterimailColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'odaaciklama\' in table \'tblOda\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'musterimail\' in table \'tblMusteri\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletblOda.odaaciklamaColumn] = value;
+                    this[this.tabletblMusteri.musterimailColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string odadurum {
+            public string musteritelefon {
                 get {
                     try {
-                        return ((string)(this[this.tabletblOda.odadurumColumn]));
+                        return ((string)(this[this.tabletblMusteri.musteritelefonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'odadurum\' in table \'tblOda\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'musteritelefon\' in table \'tblMusteri\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletblOda.odadurumColumn] = value;
+                    this[this.tabletblMusteri.musteritelefonColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsodaadNull() {
-                return this.IsNull(this.tabletblOda.odaadColumn);
+            public string musteriarac {
+                get {
+                    try {
+                        return ((string)(this[this.tabletblMusteri.musteriaracColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'musteriarac\' in table \'tblMusteri\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletblMusteri.musteriaracColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetodaadNull() {
-                this[this.tabletblOda.odaadColumn] = global::System.Convert.DBNull;
+            public System.DateTime musterigiristarih {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletblMusteri.musterigiristarihColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'musterigiristarih\' in table \'tblMusteri\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletblMusteri.musterigiristarihColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsodaturNull() {
-                return this.IsNull(this.tabletblOda.odaturColumn);
+            public System.DateTime mustericikistarih {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletblMusteri.mustericikistarihColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'mustericikistarih\' in table \'tblMusteri\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletblMusteri.mustericikistarihColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetodaturNull() {
-                this[this.tabletblOda.odaturColumn] = global::System.Convert.DBNull;
+            public string musteriodano {
+                get {
+                    try {
+                        return ((string)(this[this.tabletblMusteri.musteriodanoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'musteriodano\' in table \'tblMusteri\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletblMusteri.musteriodanoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsodakisisayisiNull() {
-                return this.IsNull(this.tabletblOda.odakisisayisiColumn);
+            public bool IsmusteritcNull() {
+                return this.IsNull(this.tabletblMusteri.musteritcColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetodakisisayisiNull() {
-                this[this.tabletblOda.odakisisayisiColumn] = global::System.Convert.DBNull;
+            public void SetmusteritcNull() {
+                this[this.tabletblMusteri.musteritcColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsodaaciklamaNull() {
-                return this.IsNull(this.tabletblOda.odaaciklamaColumn);
+            public bool IsmusteriadsoyadNull() {
+                return this.IsNull(this.tabletblMusteri.musteriadsoyadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetodaaciklamaNull() {
-                this[this.tabletblOda.odaaciklamaColumn] = global::System.Convert.DBNull;
+            public void SetmusteriadsoyadNull() {
+                this[this.tabletblMusteri.musteriadsoyadColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsodadurumNull() {
-                return this.IsNull(this.tabletblOda.odadurumColumn);
+            public bool IsmusterimailNull() {
+                return this.IsNull(this.tabletblMusteri.musterimailColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetodadurumNull() {
-                this[this.tabletblOda.odadurumColumn] = global::System.Convert.DBNull;
+            public void SetmusterimailNull() {
+                this[this.tabletblMusteri.musterimailColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsmusteritelefonNull() {
+                return this.IsNull(this.tabletblMusteri.musteritelefonColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetmusteritelefonNull() {
+                this[this.tabletblMusteri.musteritelefonColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsmusteriaracNull() {
+                return this.IsNull(this.tabletblMusteri.musteriaracColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetmusteriaracNull() {
+                this[this.tabletblMusteri.musteriaracColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsmusterigiristarihNull() {
+                return this.IsNull(this.tabletblMusteri.musterigiristarihColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetmusterigiristarihNull() {
+                this[this.tabletblMusteri.musterigiristarihColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsmustericikistarihNull() {
+                return this.IsNull(this.tabletblMusteri.mustericikistarihColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetmustericikistarihNull() {
+                this[this.tabletblMusteri.mustericikistarihColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsmusteriodanoNull() {
+                return this.IsNull(this.tabletblMusteri.musteriodanoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetmusteriodanoNull() {
+                this[this.tabletblMusteri.musteriodanoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -779,22 +906,22 @@ namespace FurkanHotel {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class tblOdaRowChangeEvent : global::System.EventArgs {
+        public class tblMusteriRowChangeEvent : global::System.EventArgs {
             
-            private tblOdaRow eventRow;
+            private tblMusteriRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tblOdaRowChangeEvent(tblOdaRow row, global::System.Data.DataRowAction action) {
+            public tblMusteriRowChangeEvent(tblMusteriRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public tblOdaRow Row {
+            public tblMusteriRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -810,7 +937,7 @@ namespace FurkanHotel {
         }
     }
 }
-namespace FurkanHotel.dbFurkanOtelDataSetsatisoda2TableAdapters {
+namespace FurkanHotel.MUSTERİLERTableAdapters {
     
     
     /// <summary>
@@ -822,7 +949,7 @@ namespace FurkanHotel.dbFurkanOtelDataSetsatisoda2TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class tblOdaTableAdapter : global::System.ComponentModel.Component {
+    public partial class tblMusteriTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -836,7 +963,7 @@ namespace FurkanHotel.dbFurkanOtelDataSetsatisoda2TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public tblOdaTableAdapter() {
+        public tblMusteriTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -933,61 +1060,82 @@ namespace FurkanHotel.dbFurkanOtelDataSetsatisoda2TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tblOda";
-            tableMapping.ColumnMappings.Add("odaid", "odaid");
-            tableMapping.ColumnMappings.Add("odaad", "odaad");
-            tableMapping.ColumnMappings.Add("odatur", "odatur");
-            tableMapping.ColumnMappings.Add("odakisisayisi", "odakisisayisi");
-            tableMapping.ColumnMappings.Add("odaaciklama", "odaaciklama");
-            tableMapping.ColumnMappings.Add("odadurum", "odadurum");
+            tableMapping.DataSetTable = "tblMusteri";
+            tableMapping.ColumnMappings.Add("musteriid", "musteriid");
+            tableMapping.ColumnMappings.Add("musteritc", "musteritc");
+            tableMapping.ColumnMappings.Add("musteriadsoyad", "musteriadsoyad");
+            tableMapping.ColumnMappings.Add("musterimail", "musterimail");
+            tableMapping.ColumnMappings.Add("musteritelefon", "musteritelefon");
+            tableMapping.ColumnMappings.Add("musteriarac", "musteriarac");
+            tableMapping.ColumnMappings.Add("musterigiristarih", "musterigiristarih");
+            tableMapping.ColumnMappings.Add("mustericikistarih", "mustericikistarih");
+            tableMapping.ColumnMappings.Add("musteriodano", "musteriodano");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tblOda] WHERE (([odaid] = @Original_odaid) AND ((@IsNull_odaad = 1 AND [odaad] IS NULL) OR ([odaad] = @Original_odaad)) AND ((@IsNull_odatur = 1 AND [odatur] IS NULL) OR ([odatur] = @Original_odatur)) AND ((@IsNull_odakisisayisi = 1 AND [odakisisayisi] IS NULL) OR ([odakisisayisi] = @Original_odakisisayisi)) AND ((@IsNull_odaaciklama = 1 AND [odaaciklama] IS NULL) OR ([odaaciklama] = @Original_odaaciklama)) AND ((@IsNull_odadurum = 1 AND [odadurum] IS NULL) OR ([odadurum] = @Original_odadurum)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tblMusteri] WHERE (([musteriid] = @Original_musteriid) AND ((@IsNull_musteritc = 1 AND [musteritc] IS NULL) OR ([musteritc] = @Original_musteritc)) AND ((@IsNull_musteriadsoyad = 1 AND [musteriadsoyad] IS NULL) OR ([musteriadsoyad] = @Original_musteriadsoyad)) AND ((@IsNull_musterimail = 1 AND [musterimail] IS NULL) OR ([musterimail] = @Original_musterimail)) AND ((@IsNull_musteritelefon = 1 AND [musteritelefon] IS NULL) OR ([musteritelefon] = @Original_musteritelefon)) AND ((@IsNull_musteriarac = 1 AND [musteriarac] IS NULL) OR ([musteriarac] = @Original_musteriarac)) AND ((@IsNull_musterigiristarih = 1 AND [musterigiristarih] IS NULL) OR ([musterigiristarih] = @Original_musterigiristarih)) AND ((@IsNull_mustericikistarih = 1 AND [mustericikistarih] IS NULL) OR ([mustericikistarih] = @Original_mustericikistarih)) AND ((@IsNull_musteriodano = 1 AND [musteriodano] IS NULL) OR ([musteriodano] = @Original_musteriodano)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odaid", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaid", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odaad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odaad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odatur", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odatur", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odatur", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odatur", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odakisisayisi", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odakisisayisi", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odakisisayisi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odakisisayisi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odaaciklama", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaaciklama", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odaaciklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaaciklama", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odadurum", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odadurum", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odadurum", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odadurum", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriid", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriid", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteritc", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritc", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteritc", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteriadsoyad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriadsoyad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriadsoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriadsoyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musterimail", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterimail", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musterimail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterimail", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteritelefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritelefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteritelefon", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritelefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteriarac", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriarac", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriarac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriarac", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musterigiristarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterigiristarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musterigiristarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterigiristarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_mustericikistarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mustericikistarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mustericikistarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mustericikistarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteriodano", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriodano", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriodano", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriodano", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tblOda] ([odaad], [odatur], [odakisisayisi], [odaaciklama], [odadurum]) VALUES (@odaad, @odatur, @odakisisayisi, @odaaciklama, @odadurum);
-SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WHERE (odaid = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tblMusteri] ([musteritc], [musteriadsoyad], [musterimail], [musteritelefon], [musteriarac], [musterigiristarih], [mustericikistarih], [musteriodano]) VALUES (@musteritc, @musteriadsoyad, @musterimail, @musteritelefon, @musteriarac, @musterigiristarih, @mustericikistarih, @musteriodano);
+SELECT musteriid, musteritc, musteriadsoyad, musterimail, musteritelefon, musteriarac, musterigiristarih, mustericikistarih, musteriodano FROM tblMusteri WHERE (musteriid = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odaad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odatur", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odatur", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odakisisayisi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odakisisayisi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odaaciklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaaciklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odadurum", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odadurum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteritc", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteriadsoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriadsoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musterimail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterimail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteritelefon", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritelefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteriarac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriarac", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musterigiristarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterigiristarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mustericikistarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mustericikistarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteriodano", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriodano", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tblOda] SET [odaad] = @odaad, [odatur] = @odatur, [odakisisayisi] = @odakisisayisi, [odaaciklama] = @odaaciklama, [odadurum] = @odadurum WHERE (([odaid] = @Original_odaid) AND ((@IsNull_odaad = 1 AND [odaad] IS NULL) OR ([odaad] = @Original_odaad)) AND ((@IsNull_odatur = 1 AND [odatur] IS NULL) OR ([odatur] = @Original_odatur)) AND ((@IsNull_odakisisayisi = 1 AND [odakisisayisi] IS NULL) OR ([odakisisayisi] = @Original_odakisisayisi)) AND ((@IsNull_odaaciklama = 1 AND [odaaciklama] IS NULL) OR ([odaaciklama] = @Original_odaaciklama)) AND ((@IsNull_odadurum = 1 AND [odadurum] IS NULL) OR ([odadurum] = @Original_odadurum)));
-SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WHERE (odaid = @odaid)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tblMusteri] SET [musteritc] = @musteritc, [musteriadsoyad] = @musteriadsoyad, [musterimail] = @musterimail, [musteritelefon] = @musteritelefon, [musteriarac] = @musteriarac, [musterigiristarih] = @musterigiristarih, [mustericikistarih] = @mustericikistarih, [musteriodano] = @musteriodano WHERE (([musteriid] = @Original_musteriid) AND ((@IsNull_musteritc = 1 AND [musteritc] IS NULL) OR ([musteritc] = @Original_musteritc)) AND ((@IsNull_musteriadsoyad = 1 AND [musteriadsoyad] IS NULL) OR ([musteriadsoyad] = @Original_musteriadsoyad)) AND ((@IsNull_musterimail = 1 AND [musterimail] IS NULL) OR ([musterimail] = @Original_musterimail)) AND ((@IsNull_musteritelefon = 1 AND [musteritelefon] IS NULL) OR ([musteritelefon] = @Original_musteritelefon)) AND ((@IsNull_musteriarac = 1 AND [musteriarac] IS NULL) OR ([musteriarac] = @Original_musteriarac)) AND ((@IsNull_musterigiristarih = 1 AND [musterigiristarih] IS NULL) OR ([musterigiristarih] = @Original_musterigiristarih)) AND ((@IsNull_mustericikistarih = 1 AND [mustericikistarih] IS NULL) OR ([mustericikistarih] = @Original_mustericikistarih)) AND ((@IsNull_musteriodano = 1 AND [musteriodano] IS NULL) OR ([musteriodano] = @Original_musteriodano)));
+SELECT musteriid, musteritc, musteriadsoyad, musterimail, musteritelefon, musteriarac, musterigiristarih, mustericikistarih, musteriodano FROM tblMusteri WHERE (musteriid = @musteriid)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odaad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odatur", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odatur", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odakisisayisi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odakisisayisi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odaaciklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaaciklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odadurum", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odadurum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odaid", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaid", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odaad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odaad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odatur", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odatur", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odatur", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odatur", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odakisisayisi", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odakisisayisi", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odakisisayisi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odakisisayisi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odaaciklama", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaaciklama", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odaaciklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odaaciklama", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_odadurum", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odadurum", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_odadurum", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "odadurum", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@odaid", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "odaid", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteritc", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteriadsoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriadsoyad", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musterimail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterimail", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteritelefon", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritelefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteriarac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriarac", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musterigiristarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterigiristarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mustericikistarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mustericikistarih", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteriodano", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriodano", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriid", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriid", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteritc", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritc", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteritc", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritc", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteriadsoyad", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriadsoyad", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriadsoyad", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriadsoyad", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musterimail", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterimail", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musterimail", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterimail", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteritelefon", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritelefon", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteritelefon", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteritelefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteriarac", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriarac", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriarac", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriarac", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musterigiristarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterigiristarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musterigiristarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musterigiristarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_mustericikistarih", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mustericikistarih", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mustericikistarih", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mustericikistarih", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_musteriodano", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriodano", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_musteriodano", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "musteriodano", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@musteriid", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "musteriid", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1003,8 +1151,8 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM dbo.tblOda" +
-                "";
+            this._commandCollection[0].CommandText = "SELECT musteriid, musteritc, musteriadsoyad, musterimail, musteritelefon, musteri" +
+                "arac, musterigiristarih, mustericikistarih, musteriodano FROM dbo.tblMusteri";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1012,7 +1160,7 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(dbFurkanOtelDataSetsatisoda2.tblOdaDataTable dataTable) {
+        public virtual int Fill(MUSTERİLER.tblMusteriDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1025,9 +1173,9 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual dbFurkanOtelDataSetsatisoda2.tblOdaDataTable GetData() {
+        public virtual MUSTERİLER.tblMusteriDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            dbFurkanOtelDataSetsatisoda2.tblOdaDataTable dataTable = new dbFurkanOtelDataSetsatisoda2.tblOdaDataTable();
+            MUSTERİLER.tblMusteriDataTable dataTable = new MUSTERİLER.tblMusteriDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1035,15 +1183,15 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dbFurkanOtelDataSetsatisoda2.tblOdaDataTable dataTable) {
+        public virtual int Update(MUSTERİLER.tblMusteriDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(dbFurkanOtelDataSetsatisoda2 dataSet) {
-            return this.Adapter.Update(dataSet, "tblOda");
+        public virtual int Update(MUSTERİLER dataSet) {
+            return this.Adapter.Update(dataSet, "tblMusteri");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1065,47 +1213,71 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_odaid, string Original_odaad, string Original_odatur, string Original_odakisisayisi, string Original_odaaciklama, string Original_odadurum) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_odaid));
-            if ((Original_odaad == null)) {
+        public virtual int Delete(int Original_musteriid, string Original_musteritc, string Original_musteriadsoyad, string Original_musterimail, string Original_musteritelefon, string Original_musteriarac, global::System.Nullable<global::System.DateTime> Original_musterigiristarih, global::System.Nullable<global::System.DateTime> Original_mustericikistarih, string Original_musteriodano) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_musteriid));
+            if ((Original_musteritc == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_odaad));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_musteritc));
             }
-            if ((Original_odatur == null)) {
+            if ((Original_musteriadsoyad == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_odatur));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_musteriadsoyad));
             }
-            if ((Original_odakisisayisi == null)) {
+            if ((Original_musterimail == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_odakisisayisi));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_musterimail));
             }
-            if ((Original_odaaciklama == null)) {
+            if ((Original_musteritelefon == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_odaaciklama));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_musteritelefon));
             }
-            if ((Original_odadurum == null)) {
+            if ((Original_musteriarac == null)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_odadurum));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_musteriarac));
+            }
+            if ((Original_musterigiristarih.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((System.DateTime)(Original_musterigiristarih.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_mustericikistarih.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((System.DateTime)(Original_mustericikistarih.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_musteriodano == null)) {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_musteriodano));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1127,36 +1299,54 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string odaad, string odatur, string odakisisayisi, string odaaciklama, string odadurum) {
-            if ((odaad == null)) {
+        public virtual int Insert(string musteritc, string musteriadsoyad, string musterimail, string musteritelefon, string musteriarac, global::System.Nullable<global::System.DateTime> musterigiristarih, global::System.Nullable<global::System.DateTime> mustericikistarih, string musteriodano) {
+            if ((musteritc == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(odaad));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(musteritc));
             }
-            if ((odatur == null)) {
+            if ((musteriadsoyad == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(odatur));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(musteriadsoyad));
             }
-            if ((odakisisayisi == null)) {
+            if ((musterimail == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(odakisisayisi));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(musterimail));
             }
-            if ((odaaciklama == null)) {
+            if ((musteritelefon == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(odaaciklama));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(musteritelefon));
             }
-            if ((odadurum == null)) {
+            if ((musteriarac == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(odadurum));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(musteriarac));
+            }
+            if ((musterigiristarih.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(musterigiristarih.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((mustericikistarih.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((System.DateTime)(mustericikistarih.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((musteriodano == null)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(musteriodano));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1178,79 +1368,139 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string odaad, string odatur, string odakisisayisi, string odaaciklama, string odadurum, int Original_odaid, string Original_odaad, string Original_odatur, string Original_odakisisayisi, string Original_odaaciklama, string Original_odadurum, int odaid) {
-            if ((odaad == null)) {
+        public virtual int Update(
+                    string musteritc, 
+                    string musteriadsoyad, 
+                    string musterimail, 
+                    string musteritelefon, 
+                    string musteriarac, 
+                    global::System.Nullable<global::System.DateTime> musterigiristarih, 
+                    global::System.Nullable<global::System.DateTime> mustericikistarih, 
+                    string musteriodano, 
+                    int Original_musteriid, 
+                    string Original_musteritc, 
+                    string Original_musteriadsoyad, 
+                    string Original_musterimail, 
+                    string Original_musteritelefon, 
+                    string Original_musteriarac, 
+                    global::System.Nullable<global::System.DateTime> Original_musterigiristarih, 
+                    global::System.Nullable<global::System.DateTime> Original_mustericikistarih, 
+                    string Original_musteriodano, 
+                    int musteriid) {
+            if ((musteritc == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(odaad));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(musteritc));
             }
-            if ((odatur == null)) {
+            if ((musteriadsoyad == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(odatur));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(musteriadsoyad));
             }
-            if ((odakisisayisi == null)) {
+            if ((musterimail == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(odakisisayisi));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(musterimail));
             }
-            if ((odaaciklama == null)) {
+            if ((musteritelefon == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(odaaciklama));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(musteritelefon));
             }
-            if ((odadurum == null)) {
+            if ((musteriarac == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(odadurum));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(musteriarac));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_odaid));
-            if ((Original_odaad == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
+            if ((musterigiristarih.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(musterigiristarih.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((mustericikistarih.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(mustericikistarih.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((musteriodano == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_odaad));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(musteriodano));
             }
-            if ((Original_odatur == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_odatur));
-            }
-            if ((Original_odakisisayisi == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_musteriid));
+            if ((Original_musteritc == null)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_odakisisayisi));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_musteritc));
             }
-            if ((Original_odaaciklama == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_odaaciklama));
-            }
-            if ((Original_odadurum == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            if ((Original_musteriadsoyad == null)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_odadurum));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_musteriadsoyad));
             }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(odaid));
+            if ((Original_musterimail == null)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_musterimail));
+            }
+            if ((Original_musteritelefon == null)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_musteritelefon));
+            }
+            if ((Original_musteriarac == null)) {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_musteriarac));
+            }
+            if ((Original_musterigiristarih.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((System.DateTime)(Original_musterigiristarih.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((Original_mustericikistarih.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((System.DateTime)(Original_mustericikistarih.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((Original_musteriodano == null)) {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_musteriodano));
+            }
+            this.Adapter.UpdateCommand.Parameters[25].Value = ((int)(musteriid));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1271,8 +1521,25 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string odaad, string odatur, string odakisisayisi, string odaaciklama, string odadurum, int Original_odaid, string Original_odaad, string Original_odatur, string Original_odakisisayisi, string Original_odaaciklama, string Original_odadurum) {
-            return this.Update(odaad, odatur, odakisisayisi, odaaciklama, odadurum, Original_odaid, Original_odaad, Original_odatur, Original_odakisisayisi, Original_odaaciklama, Original_odadurum, Original_odaid);
+        public virtual int Update(
+                    string musteritc, 
+                    string musteriadsoyad, 
+                    string musterimail, 
+                    string musteritelefon, 
+                    string musteriarac, 
+                    global::System.Nullable<global::System.DateTime> musterigiristarih, 
+                    global::System.Nullable<global::System.DateTime> mustericikistarih, 
+                    string musteriodano, 
+                    int Original_musteriid, 
+                    string Original_musteritc, 
+                    string Original_musteriadsoyad, 
+                    string Original_musterimail, 
+                    string Original_musteritelefon, 
+                    string Original_musteriarac, 
+                    global::System.Nullable<global::System.DateTime> Original_musterigiristarih, 
+                    global::System.Nullable<global::System.DateTime> Original_mustericikistarih, 
+                    string Original_musteriodano) {
+            return this.Update(musteritc, musteriadsoyad, musterimail, musteritelefon, musteriarac, musterigiristarih, mustericikistarih, musteriodano, Original_musteriid, Original_musteritc, Original_musteriadsoyad, Original_musterimail, Original_musteritelefon, Original_musteriarac, Original_musterigiristarih, Original_mustericikistarih, Original_musteriodano, Original_musteriid);
         }
     }
     
@@ -1288,7 +1555,7 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         
         private UpdateOrderOption _updateOrder;
         
-        private tblOdaTableAdapter _tblOdaTableAdapter;
+        private tblMusteriTableAdapter _tblMusteriTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1310,12 +1577,12 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public tblOdaTableAdapter tblOdaTableAdapter {
+        public tblMusteriTableAdapter tblMusteriTableAdapter {
             get {
-                return this._tblOdaTableAdapter;
+                return this._tblMusteriTableAdapter;
             }
             set {
-                this._tblOdaTableAdapter = value;
+                this._tblMusteriTableAdapter = value;
             }
         }
         
@@ -1338,9 +1605,9 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._tblOdaTableAdapter != null) 
-                            && (this._tblOdaTableAdapter.Connection != null))) {
-                    return this._tblOdaTableAdapter.Connection;
+                if (((this._tblMusteriTableAdapter != null) 
+                            && (this._tblMusteriTableAdapter.Connection != null))) {
+                    return this._tblMusteriTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1355,7 +1622,7 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._tblOdaTableAdapter != null)) {
+                if ((this._tblMusteriTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1367,14 +1634,14 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(dbFurkanOtelDataSetsatisoda2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(MUSTERİLER dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tblOdaTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tblOda.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._tblMusteriTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.tblMusteri.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._tblOdaTableAdapter.Update(updatedRows));
+                    result = (result + this._tblMusteriTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1386,13 +1653,13 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(dbFurkanOtelDataSetsatisoda2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(MUSTERİLER dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._tblOdaTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tblOda.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._tblMusteriTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.tblMusteri.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._tblOdaTableAdapter.Update(addedRows));
+                    result = (result + this._tblMusteriTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1404,13 +1671,13 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(dbFurkanOtelDataSetsatisoda2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(MUSTERİLER dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._tblOdaTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tblOda.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._tblMusteriTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.tblMusteri.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._tblOdaTableAdapter.Update(deletedRows));
+                    result = (result + this._tblMusteriTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1446,15 +1713,15 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(dbFurkanOtelDataSetsatisoda2 dataSet) {
+        public virtual int UpdateAll(MUSTERİLER dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._tblOdaTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tblOdaTableAdapter.Connection) == false))) {
+            if (((this._tblMusteriTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tblMusteriTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1490,13 +1757,13 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._tblOdaTableAdapter != null)) {
-                    revertConnections.Add(this._tblOdaTableAdapter, this._tblOdaTableAdapter.Connection);
-                    this._tblOdaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tblOdaTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tblOdaTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tblOdaTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tblOdaTableAdapter.Adapter);
+                if ((this._tblMusteriTableAdapter != null)) {
+                    revertConnections.Add(this._tblMusteriTableAdapter, this._tblMusteriTableAdapter.Connection);
+                    this._tblMusteriTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tblMusteriTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tblMusteriTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tblMusteriTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tblMusteriTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1557,9 +1824,9 @@ SELECT odaid, odaad, odatur, odakisisayisi, odaaciklama, odadurum FROM tblOda WH
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._tblOdaTableAdapter != null)) {
-                    this._tblOdaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tblOdaTableAdapter]));
-                    this._tblOdaTableAdapter.Transaction = null;
+                if ((this._tblMusteriTableAdapter != null)) {
+                    this._tblMusteriTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tblMusteriTableAdapter]));
+                    this._tblMusteriTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

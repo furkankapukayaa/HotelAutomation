@@ -52,25 +52,25 @@ namespace FurkanHotel
             this.uyeId = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tblUyeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dbFurkanOtelDataSetUYE = new FurkanHotel.dbFurkanOtelDataSetUYE();
-            this.tblUyeTableAdapter = new FurkanHotel.dbFurkanOtelDataSetUYETableAdapters.tblUyeTableAdapter();
+            this.uYELER = new FurkanHotel.UYELER();
             this.sifreGoster = new System.Windows.Forms.CheckBox();
             this.uyeOlustur = new System.Windows.Forms.Button();
             this.temizlik = new System.Windows.Forms.Button();
             this.dosyaSec = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.profilFotografi = new System.Windows.Forms.PictureBox();
-            this.uyeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uyeadsoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uyekullaniciadiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uyesifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uyeyetkiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uyemailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uyetelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uyefotografDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblUyeTableAdapter = new FurkanHotel.UYELERTableAdapters.tblUyeTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUyeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetUYE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uYELER)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilFotografi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -340,18 +340,19 @@ namespace FurkanHotel
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.uyeidDataGridViewTextBoxColumn,
-            this.uyeadsoyadDataGridViewTextBoxColumn,
-            this.uyekullaniciadiDataGridViewTextBoxColumn,
-            this.uyesifreDataGridViewTextBoxColumn,
-            this.uyeyetkiDataGridViewTextBoxColumn,
-            this.uyemailDataGridViewTextBoxColumn,
-            this.uyetelefonDataGridViewTextBoxColumn,
-            this.uyefotografDataGridViewTextBoxColumn});
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
             this.dataGridView1.DataSource = this.tblUyeBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
@@ -364,16 +365,12 @@ namespace FurkanHotel
             // tblUyeBindingSource
             // 
             this.tblUyeBindingSource.DataMember = "tblUye";
-            this.tblUyeBindingSource.DataSource = this.dbFurkanOtelDataSetUYE;
+            this.tblUyeBindingSource.DataSource = this.uYELER;
             // 
-            // dbFurkanOtelDataSetUYE
+            // uYELER
             // 
-            this.dbFurkanOtelDataSetUYE.DataSetName = "dbFurkanOtelDataSetUYE";
-            this.dbFurkanOtelDataSetUYE.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tblUyeTableAdapter
-            // 
-            this.tblUyeTableAdapter.ClearBeforeFill = true;
+            this.uYELER.DataSetName = "UYELER";
+            this.uYELER.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sifreGoster
             // 
@@ -461,76 +458,72 @@ namespace FurkanHotel
             this.profilFotografi.TabIndex = 154;
             this.profilFotografi.TabStop = false;
             // 
-            // uyeidDataGridViewTextBoxColumn
+            // tblUyeTableAdapter
             // 
-            this.uyeidDataGridViewTextBoxColumn.DataPropertyName = "uyeid";
-            this.uyeidDataGridViewTextBoxColumn.HeaderText = "uyeid";
-            this.uyeidDataGridViewTextBoxColumn.Name = "uyeidDataGridViewTextBoxColumn";
-            this.uyeidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uyeidDataGridViewTextBoxColumn.Visible = false;
-            this.uyeidDataGridViewTextBoxColumn.Width = 57;
+            this.tblUyeTableAdapter.ClearBeforeFill = true;
             // 
-            // uyeadsoyadDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.uyeadsoyadDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.uyeadsoyadDataGridViewTextBoxColumn.DataPropertyName = "uyeadsoyad";
-            this.uyeadsoyadDataGridViewTextBoxColumn.HeaderText = "Çalışan Ad Soyad";
-            this.uyeadsoyadDataGridViewTextBoxColumn.Name = "uyeadsoyadDataGridViewTextBoxColumn";
-            this.uyeadsoyadDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "uyeid";
+            this.dataGridViewTextBoxColumn1.HeaderText = "uyeid";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
             // 
-            // uyekullaniciadiDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.uyekullaniciadiDataGridViewTextBoxColumn.DataPropertyName = "uyekullaniciadi";
-            this.uyekullaniciadiDataGridViewTextBoxColumn.HeaderText = "uyekullaniciadi";
-            this.uyekullaniciadiDataGridViewTextBoxColumn.Name = "uyekullaniciadiDataGridViewTextBoxColumn";
-            this.uyekullaniciadiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uyekullaniciadiDataGridViewTextBoxColumn.Visible = false;
-            this.uyekullaniciadiDataGridViewTextBoxColumn.Width = 101;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "uyeadsoyad";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Çalışan Ad Soyad";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // uyesifreDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.uyesifreDataGridViewTextBoxColumn.DataPropertyName = "uyesifre";
-            this.uyesifreDataGridViewTextBoxColumn.HeaderText = "uyesifre";
-            this.uyesifreDataGridViewTextBoxColumn.Name = "uyesifreDataGridViewTextBoxColumn";
-            this.uyesifreDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uyesifreDataGridViewTextBoxColumn.Visible = false;
-            this.uyesifreDataGridViewTextBoxColumn.Width = 68;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "uyekullaniciadi";
+            this.dataGridViewTextBoxColumn3.HeaderText = "uyekullaniciadi";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
             // 
-            // uyeyetkiDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.uyeyetkiDataGridViewTextBoxColumn.DataPropertyName = "uyeyetki";
-            this.uyeyetkiDataGridViewTextBoxColumn.HeaderText = "uyeyetki";
-            this.uyeyetkiDataGridViewTextBoxColumn.Name = "uyeyetkiDataGridViewTextBoxColumn";
-            this.uyeyetkiDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uyeyetkiDataGridViewTextBoxColumn.Visible = false;
-            this.uyeyetkiDataGridViewTextBoxColumn.Width = 71;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "uyesifre";
+            this.dataGridViewTextBoxColumn4.HeaderText = "uyesifre";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Visible = false;
             // 
-            // uyemailDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn5
             // 
-            this.uyemailDataGridViewTextBoxColumn.DataPropertyName = "uyemail";
-            this.uyemailDataGridViewTextBoxColumn.HeaderText = "uyemail";
-            this.uyemailDataGridViewTextBoxColumn.Name = "uyemailDataGridViewTextBoxColumn";
-            this.uyemailDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uyemailDataGridViewTextBoxColumn.Visible = false;
-            this.uyemailDataGridViewTextBoxColumn.Width = 67;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "uyeyetki";
+            this.dataGridViewTextBoxColumn5.HeaderText = "uyeyetki";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Visible = false;
             // 
-            // uyetelefonDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn6
             // 
-            this.uyetelefonDataGridViewTextBoxColumn.DataPropertyName = "uyetelefon";
-            this.uyetelefonDataGridViewTextBoxColumn.HeaderText = "uyetelefon";
-            this.uyetelefonDataGridViewTextBoxColumn.Name = "uyetelefonDataGridViewTextBoxColumn";
-            this.uyetelefonDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uyetelefonDataGridViewTextBoxColumn.Visible = false;
-            this.uyetelefonDataGridViewTextBoxColumn.Width = 81;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "uyemail";
+            this.dataGridViewTextBoxColumn6.HeaderText = "uyemail";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Visible = false;
             // 
-            // uyefotografDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn7
             // 
-            this.uyefotografDataGridViewTextBoxColumn.DataPropertyName = "uyefotograf";
-            this.uyefotografDataGridViewTextBoxColumn.HeaderText = "uyefotograf";
-            this.uyefotografDataGridViewTextBoxColumn.Name = "uyefotografDataGridViewTextBoxColumn";
-            this.uyefotografDataGridViewTextBoxColumn.ReadOnly = true;
-            this.uyefotografDataGridViewTextBoxColumn.Visible = false;
-            this.uyefotografDataGridViewTextBoxColumn.Width = 85;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "uyetelefon";
+            this.dataGridViewTextBoxColumn7.HeaderText = "uyetelefon";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "uyefotograf";
+            this.dataGridViewTextBoxColumn8.HeaderText = "uyefotograf";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Visible = false;
             // 
             // uyeİslemleri
             // 
@@ -569,7 +562,7 @@ namespace FurkanHotel
             this.Load += new System.EventHandler(this.uyeler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblUyeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbFurkanOtelDataSetUYE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uYELER)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilFotografi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -596,9 +589,6 @@ namespace FurkanHotel
         private System.Windows.Forms.Label lblTelefon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox uyeId;
-        private dbFurkanOtelDataSetUYE dbFurkanOtelDataSetUYE;
-        private System.Windows.Forms.BindingSource tblUyeBindingSource;
-        private dbFurkanOtelDataSetUYETableAdapters.tblUyeTableAdapter tblUyeTableAdapter;
         private System.Windows.Forms.CheckBox sifreGoster;
         private System.Windows.Forms.Button uyeOlustur;
         private System.Windows.Forms.ImageList icons;
@@ -607,13 +597,16 @@ namespace FurkanHotel
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PictureBox profilFotografi;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyeidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyeadsoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyekullaniciadiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyesifreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyeyetkiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyemailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyetelefonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn uyefotografDataGridViewTextBoxColumn;
+        private UYELER uYELER;
+        private System.Windows.Forms.BindingSource tblUyeBindingSource;
+        private UYELERTableAdapters.tblUyeTableAdapter tblUyeTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }

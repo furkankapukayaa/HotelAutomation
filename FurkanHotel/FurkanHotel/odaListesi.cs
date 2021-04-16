@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace FurkanHotel
 {
-    public partial class odalar : Form
+    public partial class odaListesi : Form
     {
-        public odalar()
+        public odaListesi()
         {
             InitializeComponent();
         }
@@ -27,8 +27,7 @@ namespace FurkanHotel
 
         private void odalar_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dbFurkanOtelDataSetODA2.tblOda' table. You can move, or remove it, as needed.
-            this.tblOdaTableAdapter.Fill(this.dbFurkanOtelDataSetODA2.tblOda);
+            this.tblOdaTableAdapter.Fill(this.oDALAR.tblOda);
             DataGridViewTasarım(dataGridView1);
 
             foreach (DataGridViewRow row in dataGridView1.Rows)

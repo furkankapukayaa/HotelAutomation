@@ -112,8 +112,8 @@ namespace FurkanHotel
 
         private void odaİslemleri_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dbFurkanOtelDataSetODA2.tblOda' table. You can move, or remove it, as needed.
-            this.tblOdaTableAdapter1.Fill(this.dbFurkanOtelDataSetODA2.tblOda);
+            // TODO: This line of code loads data into the 'oDALAR.tblOda' table. You can move, or remove it, as needed.
+            this.tblOdaTableAdapter.Fill(this.oDALAR.tblOda);
             Oda oda = new Oda();
             DataTable tblOda = oda.tblOda();
             dataGridView1.DataSource = tblOda;
