@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using FurkanHotel.Events;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FurkanHotel.Events;
 
 namespace FurkanHotel
 {
@@ -49,27 +44,29 @@ namespace FurkanHotel
                 Oda oda = new Oda();
                 oda.Odaad = odaAdi.Text;
                 oda.Odatur = odaTur.SelectedItem.ToString();
-                oda.Odakisisayisi = yetiskin.SelectedItem.ToString() +" Yetişkin "+ cocuk.SelectedItem.ToString() +" Çocuk "+" Evcil Hayvan : "+ evcilHayvan.SelectedItem.ToString();
+                oda.Odakisisayisi = yetiskin.SelectedItem.ToString() + " Yetişkin " + cocuk.SelectedItem.ToString() + " Çocuk " + " Evcil Hayvan : " + evcilHayvan.SelectedItem.ToString();
                 oda.Odaaciklama = odaAciklama.Text;
                 oda.Odadurum = odaDurum.SelectedItem.ToString();
                 oda.OdaEkle();
                 Temizle();
                 odaİslemleri_Load(sender, e);
                 this.Bildirim("Başarıyla Eklendi!");
+
                 //MessageBox.Show("Oda Başarıyla Eklendi!", "Oda Ekleme İşlemi");
             }
             else
             {
                 this.Bildirim("Boş Alan Bırakmayınız!");
+
                 //MessageBox.Show("Oda Ekleme Başarısız! Boş Alan Bırakmayınız!", "Oda Ekleme İşlemi");
             }
         }
 
-        int id = 0;
+        private int id = 0;
         private void guncelle_Click(object sender, EventArgs e)
         {
             Oda oda = new Oda();
-            oda.Odaid= id;
+            oda.Odaid = id;
             oda.Odaad = odaAdi.Text;
             oda.Odatur = odaTur.SelectedItem.ToString();
             oda.Odakisisayisi = yetiskin.SelectedItem.ToString() + " Yetişkin " + cocuk.SelectedItem.ToString() + " Çocuk " + " Evcil Hayvan : " + evcilHayvan.SelectedItem.ToString();
@@ -79,6 +76,7 @@ namespace FurkanHotel
             Temizle();
             odaİslemleri_Load(sender, e);
             this.Bildirim("Güncelleme Başarılı!");
+
             //MessageBox.Show("GÜNCELLENDİ");
         }
 
@@ -90,10 +88,11 @@ namespace FurkanHotel
             Temizle();
             odaİslemleri_Load(sender, e);
             this.Bildirim("Silme İşlemi Başarılı!");
+
             //MessageBox.Show("SİLİNDİ");
         }
 
-        int secilen;
+        private int secilen;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
@@ -105,7 +104,7 @@ namespace FurkanHotel
             odaAdi.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
             odaTur.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
             lblUyarı.Visible = true;
-            lblUyarı.Text  = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
+            lblUyarı.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString();
             odaAciklama.Text = dataGridView1.Rows[secilen].Cells[4].Value.ToString();
             odaDurum.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
         }

@@ -36,3 +36,23 @@ C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHo
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.exe
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.pdb
 C:\Users\user\Desktop\Otel-Otomasyonu\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.odaListesi.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\bin\Debug\FurkanHotel.exe.config
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\bin\Debug\FurkanHotel.exe
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\bin\Debug\FurkanHotel.pdb
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.csproj.AssemblyReference.cache
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.csproj.SuggestedBindingRedirects.cache
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.anaMenu.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.bildirim.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.girisEkrani.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.musteriİslemleri.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.odaListesi.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.odaİslemleri.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.profil.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.Properties.Resources.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.satisİslemleri.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.sifremiUnuttum.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.uyeİslemleri.resources
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.csproj.GenerateResource.cache
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.exe
+C:\Users\Furkan\Desktop\Desktop\furkandev\Github Clone\HotelAutomation\FurkanHotel\FurkanHotel\obj\Debug\FurkanHotel.pdb

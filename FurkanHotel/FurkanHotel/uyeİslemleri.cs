@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using FurkanHotel.Events;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FurkanHotel.Events;
 
 namespace FurkanHotel
 {
@@ -42,8 +37,8 @@ namespace FurkanHotel
             DataGridViewTasarım(dataGridView1);
         }
 
-        int id = 0;
-        int secilen;
+        private int id = 0;
+        private int secilen;
 
         public void Bildirim(string msg)
         {
@@ -80,6 +75,7 @@ namespace FurkanHotel
             Temizle();
             uyeler_Load(sender, e);
             this.Bildirim("Güncelleme Başarılı!");
+
             //MessageBox.Show("GÜNCELLENDİ");
         }
 
@@ -91,6 +87,7 @@ namespace FurkanHotel
             Temizle();
             uyeler_Load(sender, e);
             this.Bildirim("Silme İşlemi Başarılı!");
+
             //MessageBox.Show("SİLİNDİ");
         }
 
@@ -136,19 +133,20 @@ namespace FurkanHotel
                 uye.UyeEkle();
                 Temizle();
                 uyeler_Load(sender, e);
+
                 //girisEkrani girisEkrani = new girisEkrani();
                 //girisEkrani.Show();
                 //this.Close();
                 this.Bildirim("Başarıyla Eklendi!");
+
                 //MessageBox.Show("Üye Başarıyla Eklendi!", "Üye Ekleme İşlemi");
             }
             else
             {
                 this.Bildirim("Boş Alan Bırakmayınız!");
+
                 //MessageBox.Show("Üye Ekleme Başarısız! Boş Alan Bırakmayınız!", "Üye Ekleme İşlemi");
             }
-
-
         }
 
         private void sifre_TextChanged(object sender, EventArgs e)

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
 namespace FurkanHotel.Events
@@ -24,9 +19,9 @@ namespace FurkanHotel.Events
         public string SatisOdendimi { get => satisodendimi; set => satisodendimi = value; }
         public string SatisOdemeyontemi { get => satisodemeyontemi; set => satisodemeyontemi = value; }
 
-        SqlCommand komut;
-        SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
-        SqlDataReader oku;
+        private SqlCommand komut;
+        private SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
+        private SqlDataReader oku;
 
         public void SatisEkle()
         {
@@ -53,7 +48,6 @@ namespace FurkanHotel.Events
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
@@ -69,15 +63,12 @@ namespace FurkanHotel.Events
             komut.Parameters.AddWithValue("@odemeyontemi", this.SatisOdemeyontemi);
             komut.Parameters.AddWithValue("@id", this.satisid);
 
-
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
-
         }
 
         public DataTable tblSatis()

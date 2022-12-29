@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace FurkanHotel.Events
 {
@@ -31,9 +26,9 @@ namespace FurkanHotel.Events
         public DateTime Mustericikistarih { get => mustericikistarih; set => mustericikistarih = value; }
         public string Musteriodano { get => musteriodano; set => musteriodano = value; }
 
-        SqlCommand komut;
-        SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
-        SqlDataReader oku;
+        private SqlCommand komut;
+        private SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
+        private SqlDataReader oku;
 
         public void MusteriEkle()
         {
@@ -63,7 +58,6 @@ namespace FurkanHotel.Events
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
@@ -82,15 +76,12 @@ namespace FurkanHotel.Events
             komut.Parameters.AddWithValue("@odano", this.Musteriodano);
             komut.Parameters.AddWithValue("@id", this.musteriid);
 
-
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
-
         }
 
         public DataTable tblMusteri()

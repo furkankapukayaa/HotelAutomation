@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using FurkanHotel.Events;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FurkanHotel.Events;
 
 namespace FurkanHotel
 {
@@ -37,8 +32,8 @@ namespace FurkanHotel
             mail.Clear();
             telefon.Clear();
             arac.Clear();
-            girisTarihi.Value= DateTime.Now;
-            cikisTarihi.Value= DateTime.Now;
+            girisTarihi.Value = DateTime.Now;
+            cikisTarihi.Value = DateTime.Now;
             odaNo.Clear();
             this.Bildirim("Temizlik Yapıldı! Oh misss :)");
         }
@@ -60,11 +55,13 @@ namespace FurkanHotel
                 Temizle();
                 musteriİslemleri_Load(sender, e);
                 this.Bildirim("Başarıyla Eklendi!");
-               //MessageBox.Show("Müşteri Başarıyla Eklendi!", "Müşteri Ekleme İşlemi");
+
+                //MessageBox.Show("Müşteri Başarıyla Eklendi!", "Müşteri Ekleme İşlemi");
             }
             else
             {
                 this.Bildirim("Boş Alan Bırakmayınız!");
+
                 //MessageBox.Show("Müşteri Ekleme Başarısız! Boş Alan Bırakmayınız!", "Müşteri Ekleme İşlemi");
             }
         }
@@ -85,19 +82,21 @@ namespace FurkanHotel
             Temizle();
             musteriİslemleri_Load(sender, e);
             this.Bildirim("Güncelleme Başarılı!");
+
             //MessageBox.Show("GÜNCELLENDİ");
         }
 
-        int id = 0;
-        
+        private int id = 0;
+
         private void sil_Click(object sender, EventArgs e)
         {
             Musteri musteri = new Musteri();
-            musteri.Musteriid= id;
+            musteri.Musteriid = id;
             musteri.MusteriSil();
             Temizle();
             musteriİslemleri_Load(sender, e);
             this.Bildirim("Silme İşlemi Başarılı!");
+
             //MessageBox.Show("SİLİNDİ");
         }
 
@@ -117,7 +116,7 @@ namespace FurkanHotel
             DataGridViewTasarım(dataGridView1);
         }
 
-        int secilen;
+        private int secilen;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = dataGridView1.Rows[e.RowIndex];

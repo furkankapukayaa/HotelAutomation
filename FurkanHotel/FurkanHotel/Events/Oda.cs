@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -25,9 +21,9 @@ namespace FurkanHotel.Events
         public string Odaaciklama { get => odaaciklama; set => odaaciklama = value; }
         public string Odadurum { get => odadurum; set => odadurum = value; }
 
-        SqlCommand komut;
-        SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
-        SqlDataReader oku;
+        private SqlCommand komut;
+        private SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
+        private SqlDataReader oku;
 
         public void OdaEkle()
         {
@@ -54,7 +50,6 @@ namespace FurkanHotel.Events
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
@@ -70,15 +65,12 @@ namespace FurkanHotel.Events
             komut.Parameters.AddWithValue("@durum", this.Odadurum);
             komut.Parameters.AddWithValue("@id", this.odaid);
 
-
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
-
         }
 
         public DataTable tblOda()

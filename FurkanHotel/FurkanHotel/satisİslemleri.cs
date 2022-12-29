@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using FurkanHotel.Events;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FurkanHotel.Events;
 
 namespace FurkanHotel
 {
@@ -51,9 +45,9 @@ namespace FurkanHotel
             bildirim.BildirimGoster(msg);
         }
 
-        int id = 0;
-        int secilen;
-        
+        private int id = 0;
+        private int secilen;
+
         public void Temizle()
         {
             foreach (Control item in this.Controls)
@@ -70,7 +64,7 @@ namespace FurkanHotel
             odaDurum.SelectedIndex = 0;
             odaOdaTur.SelectedIndex = 0;
             musteriGirisTarihi.Value = DateTime.Now;
-            musteriCikisTarihi.Value= DateTime.Now;
+            musteriCikisTarihi.Value = DateTime.Now;
             this.Bildirim("Temizlik Yapıldı! Oh misss :)");
         }
 
@@ -90,9 +84,9 @@ namespace FurkanHotel
             musteriGirisTarihi.Text = dataGridView1.Rows[secilen].Cells[6].Value.ToString();
             musteriCikisTarihi.Text = dataGridView1.Rows[secilen].Cells[7].Value.ToString();
             musteriOdaNo.Text = dataGridView1.Rows[secilen].Cells[8].Value.ToString();
-            
+
             satisAdSoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
-            satisOdaAdi.Text= dataGridView1.Rows[secilen].Cells[8].Value.ToString();
+            satisOdaAdi.Text = dataGridView1.Rows[secilen].Cells[8].Value.ToString();
         }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -103,7 +97,7 @@ namespace FurkanHotel
             secilen = dataGridView2.SelectedCells[0].RowIndex;
 
             odaId.Text = dataGridView2.Rows[secilen].Cells[0].Value.ToString();
-            
+
             odaOdaAdi.Text = dataGridView2.Rows[secilen].Cells[1].Value.ToString();
             odaOdaTur.Text = dataGridView2.Rows[secilen].Cells[2].Value.ToString();
             lblUyarı.Text = dataGridView2.Rows[secilen].Cells[3].Value.ToString();
@@ -115,7 +109,6 @@ namespace FurkanHotel
 
         private void satisEkle_Click(object sender, EventArgs e)
         {
-
             if (satisFiyat.Text != String.Empty)
             {
                 Oda oda = new Oda();
@@ -149,11 +142,13 @@ namespace FurkanHotel
                 Temizle();
                 satisİslemleri_Load(sender, e);
                 this.Bildirim("Başarıyla Eklendi!");
+
                 //MessageBox.Show("Satış Başarıyla Eklendi!", "Satış Ekleme İşlemi");
             }
             else
             {
                 this.Bildirim("Boş Alan Bırakmayınız!");
+
                 //MessageBox.Show("Satış Ekleme Başarısız! Boş Alan Bırakmayınız!", "Satış Ekleme İşlemi");
             }
         }
@@ -171,6 +166,7 @@ namespace FurkanHotel
             Temizle();
             satisİslemleri_Load(sender, e);
             this.Bildirim("Güncelleme Başarılı!");
+
             //MessageBox.Show("GÜNCELLENDİ");
         }
 
@@ -182,6 +178,7 @@ namespace FurkanHotel
             Temizle();
             satisİslemleri_Load(sender, e);
             this.Bildirim("Silme İşlemi Başarılı!");
+
             //MessageBox.Show("SİLİNDİ");
         }
 
@@ -198,7 +195,6 @@ namespace FurkanHotel
             satisFiyat.Text = dataGridView3.Rows[secilen].Cells[3].Value.ToString();
             satisOdendiMi.Text = dataGridView3.Rows[secilen].Cells[4].Value.ToString();
             satisOdemeYontemi.Text = dataGridView3.Rows[secilen].Cells[5].Value.ToString();
-
         }
 
         private void btnTemizle_Click(object sender, EventArgs e)

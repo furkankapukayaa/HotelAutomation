@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using FurkanHotel.Events;
+using System;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FurkanHotel.Events;
 
 namespace FurkanHotel
 {
@@ -30,7 +23,7 @@ namespace FurkanHotel
         private void profil_Load(object sender, EventArgs e)
         {
             sifreGoster.Visible = false;
-            uyeId.Text= girisEkrani.gonderid;
+            uyeId.Text = girisEkrani.gonderid;
             SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
             baglanti.Open();
             SqlCommand verioku = new SqlCommand("select * from tblUye where uyeid = '" + uyeId.Text + "'", baglanti);
@@ -92,7 +85,6 @@ namespace FurkanHotel
 
             //while (oku.Read())
             //{
-
             //    adSoyad.Text = oku["uyeadsoyad"].ToString();
             //    kullaniciAdi.Text = oku["uyekullaniciadi"].ToString();
             //    sifre.Text = oku["uyesifre"].ToString();

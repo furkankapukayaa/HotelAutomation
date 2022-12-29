@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FurkanHotel
@@ -42,7 +36,7 @@ namespace FurkanHotel
         private void bildirim_Load(object sender, EventArgs e)
         {
             this.Left = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Right - this.Width;
-            this.Top = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Height - this.Width ;
+            this.Top = System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Height - this.Width;
         }
 
         private void bildirimKapat_Click(object sender, EventArgs e)
@@ -59,6 +53,7 @@ namespace FurkanHotel
                     timer1.Interval = 5000;
                     action = enumAction.close;
                     break;
+
                 case enumAction.start:
                     timer1.Interval = 1;
                     this.Opacity += 0.1;
@@ -74,6 +69,7 @@ namespace FurkanHotel
                         }
                     }
                     break;
+
                 case enumAction.close:
                     timer1.Interval = 1;
                     this.Opacity -= 0.1;
@@ -81,7 +77,6 @@ namespace FurkanHotel
                     if (base.Opacity == 0.0)
                     {
                         base.Close();
-
                     }
                     break;
             }

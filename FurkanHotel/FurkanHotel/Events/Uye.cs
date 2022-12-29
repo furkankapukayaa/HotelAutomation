@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace FurkanHotel.Events
 {
@@ -29,9 +24,9 @@ namespace FurkanHotel.Events
         public string Uyetelefon { get => uyetelefon; set => uyetelefon = value; }
         public string Uyefotograf { get => uyefotograf; set => uyefotograf = value; }
 
-        SqlCommand komut;
-        SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
-        SqlDataReader oku;
+        private SqlCommand komut;
+        private SqlConnection baglanti = new SqlConnection("Data Source=FURKAN;Initial Catalog=dbFurkanOtel;Integrated Security=True");
+        private SqlDataReader oku;
 
         public void UyeEkle()
         {
@@ -60,7 +55,6 @@ namespace FurkanHotel.Events
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
@@ -78,15 +72,12 @@ namespace FurkanHotel.Events
             komut.Parameters.AddWithValue("@fotograf", this.Uyefotograf);
             komut.Parameters.AddWithValue("@id", this.uyeid);
 
-
             if ((baglanti.State == ConnectionState.Closed))
             {
                 baglanti.Open();
-
             }
             komut.ExecuteNonQuery();
             baglanti.Close();
-
         }
 
         public DataTable tblUye()
@@ -125,26 +116,27 @@ namespace FurkanHotel.Events
                 girisEkrani.Close();
                 anaMenu anaMenu = new anaMenu();
                 anaMenu.Show();
+
                 //MessageBox.Show("Giriş Başarılı!", "Üye Giriş İşlemi");
                 this.Bildirim("Merhaba " + kullaniciadisorgu.ToUpper() + " Hoş Geldin!");
-                
+
                 List<string> aa = new List<string>();
-                
+
                 for (int i = 0; i < oku.FieldCount; i++)
                 {
-
                     aa.Add(oku[i].ToString());
                 }
                 return aa;
             }
             else
             {
-              // MessageBox.Show("Hatalı Giriş!", "Üye Giriş İşlemi");
+                // MessageBox.Show("Hatalı Giriş!", "Üye Giriş İşlemi");
                 this.Bildirim("Hatalı Giriş! " + kullaniciadisorgu.ToUpper() + " Tekrar Dene!");
                 return null;
             }
-           // baglanti.Close();
-           // komut.Dispose();
+
+            // baglanti.Close();
+            // komut.Dispose();
         }
     }
 }

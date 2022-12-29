@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using FurkanHotel.Events;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using FurkanHotel.Events;
 
 namespace FurkanHotel
 {
@@ -39,6 +34,7 @@ namespace FurkanHotel
                 {
                     anaMenu anaMenu = new anaMenu();
                     Uye uye = new Uye();
+
                     // uye.GirisYap(kullaniciAdi.Text, sifre.Text);
                     var kullanici = uye.GirisYap(kullaniciAdi.Text, sifre.Text);
                     profil profil = new profil();
@@ -49,16 +45,13 @@ namespace FurkanHotel
                 }
                 catch (Exception)
                 {
-
                 }
-
             }
             else
             {
                 // MessageBox.Show("Boş Bırakmayınız!", "Üye Giriş İşlemi");
                 this.Bildirim("Boş Bırakmayınız! ");
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -86,6 +79,7 @@ namespace FurkanHotel
         {
             // TODO: This line of code loads data into the 'uYELER.tblUye' table. You can move, or remove it, as needed.
             this.tblUyeTableAdapter.Fill(this.uYELER.tblUye);
+
             // TODO: This line of code loads data into the 'dbFurkanOtelDataSetSIL.tblUye' table. You can move, or remove it, as needed.
             kullaniciAdi.Focus();
             sifreGoster.Visible = false;
@@ -120,19 +114,26 @@ namespace FurkanHotel
                                                box.ClientRectangle.Y + (int)(strSize.Height / 2),
                                                box.ClientRectangle.Width - 1,
                                                box.ClientRectangle.Height - (int)(strSize.Height / 2) - 1);
+
                 // Clear text and border
                 g.Clear(this.BackColor);
+
                 // Draw text
                 g.DrawString(box.Text, box.Font, textBrush, box.Padding.Left, 0);
+
                 // Drawing Border
                 //Left
                 g.DrawLine(borderPen, rect.Location, new Point(rect.X, rect.Y + rect.Height));
+
                 //Right
                 g.DrawLine(borderPen, new Point(rect.X + rect.Width, rect.Y), new Point(rect.X + rect.Width, rect.Y + rect.Height));
+
                 //Bottom
                 g.DrawLine(borderPen, new Point(rect.X, rect.Y + rect.Height), new Point(rect.X + rect.Width, rect.Y + rect.Height));
+
                 //Top1
                 g.DrawLine(borderPen, new Point(rect.X, rect.Y), new Point(rect.X + box.Padding.Left, rect.Y));
+
                 //Top2
                 g.DrawLine(borderPen, new Point(rect.X + box.Padding.Left + (int)(strSize.Width), rect.Y), new Point(rect.X + rect.Width, rect.Y));
             }
@@ -143,7 +144,6 @@ namespace FurkanHotel
             GroupBox box = sender as GroupBox;
             DrawGroupBox(box, e.Graphics, Color.Red, Color.Red);
         }
-
 
         private void sifremiUnuttum_Click(object sender, EventArgs e)
         {
@@ -165,6 +165,7 @@ namespace FurkanHotel
                         SmtpClient sc = new SmtpClient();
                         sc.Port = 587;
                         sc.Host = "smtp.gmail.com";
+
                         //Hotmail veya Outlook = 'smtp.live.com'
                         //Gmail = 'smtp.gmail.com'
                         //Office 365 = 'smtp.office365.com'
@@ -188,6 +189,7 @@ namespace FurkanHotel
                     {
                         //MessageBox.Show("Böyle bir kullanıcı adı yok!", "Şifremi Unuttum İşlemi");
                         this.Bildirim("Böyle bir kullanıcı adı yok!");
+
                         // MessageBox.Show(ex.ToString(), "Böyle bir kullanıcı adı yok!");
                     }
                 }
